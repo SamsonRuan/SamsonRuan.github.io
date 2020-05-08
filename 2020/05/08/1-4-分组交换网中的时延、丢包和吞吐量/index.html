@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="renderer" content="webkit"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.0.0-rc.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.0.0-rc.0" type="image/png" sizes="32x32"><meta name="description" content="1.4.1 分组交换网中的时延概述                           本节概述       当分组从上游结点到达路由器A时，路由器A检查该分组的首部以决定该分组的适当出链路，并将该分组导向该链路。仅当在该链路没有其他分组正在传输并且没有其他分组排在该队列前面时，才能在这条链路上传输该分组;如果该链路当前正繁忙或有其他分组已经在该链路上排队，">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta property="og:type" content="article">
+<meta property="og:title" content="1.4 分组交换网中的时延、丢包和吞吐量">
+<meta property="og:url" content="http://yoursite.com/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/index.html">
+<meta property="og:site_name" content="Samson&#39;s blog">
+<meta property="og:description" content="1.4.1 分组交换网中的时延概述                           本节概述       当分组从上游结点到达路由器A时，路由器A检查该分组的首部以决定该分组的适当出链路，并将该分组导向该链路。仅当在该链路没有其他分组正在传输并且没有其他分组排在该队列前面时，才能在这条链路上传输该分组;如果该链路当前正繁忙或有其他分组已经在该链路上排队，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/1-21b.png">
+<meta property="article:published_time" content="2020-05-08T12:25:57.000Z">
+<meta property="article:modified_time" content="2020-05-08T12:36:49.580Z">
+<meta property="article:author" content="Samson Yuen">
+<meta property="article:tag" content="时延">
+<meta property="article:tag" content="分组交换">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/1-21b.png"><meta name="keywords" content="Samson Yuen, Samson's blog"><meta name="description"><title>1.4 分组交换网中的时延、丢包和吞吐量 | Samson's blog</title><link ref="canonical" href="http://yoursite.com/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.0.0-rc.0"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: true,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-child"></i></span><span class="header-nav-menu-item__text">关于</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Samson's blog</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">1.4 分组交换网中的时延、丢包和吞吐量</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body">
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><h3 id="1-4-1-分组交换网中的时延概述">
+          <a href="#1-4-1-分组交换网中的时延概述" class="heading-link"><i class="fas fa-link"></i></a>1.4.1 分组交换网中的时延概述</h3>
+      
+        <h6 id="本节概述">
+          <a href="#本节概述" class="heading-link"><i class="fas fa-link"></i></a>本节概述</h6>
+      <p>当分组从上游结点到达路由器A时，路由器A检查该分组的首部以决定该分组的适当出链路，并将该分组导向该链路。仅当在该链路没有其他分组正在传输并且没有其他分组排在该队列前面时，才能在这条链路上传输该分组;如果该链路当前正繁忙或有其他分组已经在该链路上排队，则新到达的分组则将参与排队。</p>
+<p><strong>节点时延的类型</strong></p>
+<ul>
+<li>处理时延</li>
+</ul>
+<p>检查分组首部和决定将该分组导向何处所需要的时间是处理时延。在这种结点处理之后，路由器将该分组引向通往路由器B链路之前的队列。</p>
+<ul>
+<li>排队时延</li>
+</ul>
+<p>当分组经过处理到达链路队列时，如果在它之前有正在传输的分组，则在前面的分组传输完成之前，该分组需要进行等待。等待的时间被称为是排队时延。</p>
+<ul>
+<li>传输时延</li>
+</ul>
+<p>仅当所有已经到达的分组被传输之后，才能传输刚到达的分组。传输时延是将所有分组的比特推向链路所需要的时间。</p>
+<p>建设链路的传输速度是Rbps，分组的大小是Lb，那么路由器传输该分组的时间是：<script type="math/tex">T=\frac{L}{R}</script></p>
+<ul>
+<li>传播时延</li>
+</ul>
+<p>一旦一个比特被推向链路，该比特需要向路由器B传播。从该链路的起点到路由器B传播所需要的时间是传播时延。该比特以该链路的传播速率传播。该传播速率取决于该链路的物理媒体(即光纤、双绞铜线等)，其速率范围是$2×10^8-3×10^8m/s$，这等于或略小于光速。该传播时延等于两台路由器之间的距离除以传播速率。一旦该分组的最后一个比特传播到结点B，该比特及前面的所有比特被存储于路由器B。</p>
+<p><strong>传输时延和传播时延之间的比较</strong></p>
+<p>传输时延是路由器将分组推出所需要的时间，它是分组长度和链路传输速率的<br>函数，而与两台路由器之间的距离无关。另一方面，传播时延是一个比特从一台路由器向另一台路由器传播所需要的时间，它是两台路由器之间距离的函数，而与分组长度或链路传输速率无关。</p>
+<p>如果我们令$d_{proc}$,$d_{queue}$,$d_{trans}$和$d_{prop}$分别表示处理时延、排队时延、传输时延和传播时延，则结点的总时延由下式给定：</p>
+<script type="math/tex; mode=display">d_{node}=d_{proc}+d_{queue}+d_{trans}+d_{prop}</script>
+        <h3 id="1-4-2-排队时延和丢包">
+          <a href="#1-4-2-排队时延和丢包" class="heading-link"><i class="fas fa-link"></i></a>1.4.2 排队时延和丢包</h3>
+      
+        <h6 id="本节概要">
+          <a href="#本节概要" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>令a表示分组达到队列的平均速度，即平均每秒钟到达a个分组。R是传输速率，即队列中推出比特的速率。也假定所有的分组大小都是L比特。那么比特达到队列的平局速率是La bps。比率$\frac{L\cdot a}{R}$被称为<strong>流量强度</strong>。</p>
+<ul>
+<li>如果La/R&gt;1，就说明比特到达队列的平均速率超过比特被推送出队列的速率。因此，流量工程中的一条金科玉律是：<strong>设计系统时流量强度不能大于1</strong></li>
+<li>如果La/R&lt;=1,这时候并不意味着没有排队时延，而是<strong>取决于到达流量的性质</strong>。如果流量的达到不是线性的，而是突发性质的，那么即使流量强度小于1，也会造成很大的排队时延。比如假设每过(L/R)N秒同时达到N个分组，那么此时第n个传输的分组就具有了(L/R)(n-1)的 时延。</li>
+</ul>
+<p><strong>丢包</strong></p>
+<p>一条链路前的队列的容量是有限的，当达到的分组发现一个满队列时，由于没有地方存储该分组，路由器将会丢弃该分组，造成丢包的现象</p>
+
+        <h3 id="1-4-3-端到端时延">
+          <a href="#1-4-3-端到端时延" class="heading-link"><i class="fas fa-link"></i></a>1.4.3 端到端时延</h3>
+      <p>略</p>
+
+        <h3 id="1-4-4-计算机网络中的吞吐量">
+          <a href="#1-4-4-计算机网络中的吞吐量" class="heading-link"><i class="fas fa-link"></i></a>1.4.4 计算机网络中的吞吐量</h3>
+      
+        <h6 id="本节概要-1">
+          <a href="#本节概要-1" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>吞吐量就是<strong>单位时间内链路中通过了多少比特的数据</strong>，是一种衡量链路中数据传输量大小的指标。当然，这个概念也可以用于某个具体的文件中，比如，某文件大小为F，从A端发送到B端总共花去T秒，则该文件传输的平均吞吐量为F/T bps。</p>
+<p>令$R_s$表示服务器与路由器之间的链路速率,$R_c$表示路由器与客户之间的链路速率。显然，这台服务器不能以快于$R_s$bps的速率通过其链路注入比特;这台路由器也不能以快于$R_c$bps的速率转发比特。如果$R_s&lt;R_c$，则由该服务器注入的比特将顺畅地通过路由器“流动”，并以速率$R_s$bps到达客户，给定了$R_s$bps的吞吐量。在另一方面，如果$R_c&lt;R_s$bps，则该路由器将不能够以接收它们那样快的速率来转发比特。在这种情况下，比特将以速率$R_c$离开该路由器，从而得到端到端昋吞吐量$R_c$。<strong>对于这种简单的两链路的网络，其吞吐量是min{$R_s$，$R_c$}，这就是说，它是瓶颈链路(bottleneck link)的传输速率</strong>。</p>
+<p>应用与对两条链路网络的分析相同的方法，我们发现从服务器到客户的文件传输的吞吐量是min{$R_1$，$R_2$，…，$R_2$}，这同样仍是沿着服务器和客户之间路径的瓶颈链路的速率。</p>
+<p>鉴于当今因特网的核心部分装备了高速率的链路，因此，吞吐量的限制因素往往是底层的接入网的链路传输速率。</p>
+<p><img src="/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/1-21b.png" alt="1-20b"></p>
+<p>考虑上图情况，假设$R_s=2 Mbps$，$R_c=1 Mbps$,$R=5 Mbps$。那么，假设某时十台服务器同时向十台客户端传送文件，此时同时要进入R链路的比特流为20 Mbps，但R由于其传输速度限制只能向十台客户端输出5 Mbps的比特流。结果就是每台客户端能接收的流量为 500 kbps。所以，对客户端而言，此时的网络吞吐量为500 kbps。</p>
+<p>这就说明：<strong>网络吞吐量也受到其他干扰流量的影响</strong>。</p>
+<p><strong>总结</strong></p>
+<ul>
+<li>吞吐量取决于数据流过的链路的传输速率。</li>
+<li>没有其他干扰流量时，其吞吐量能够近似为沿着源和目的地之间路径的最小传输速率。</li>
+<li>吞吐量不仅取决于沿着路径的传输速率，而且取决于干扰流量。特别是，如果许多其他的数据流也通过这条链路流动，一条具有高传输速率的链路仍然可能成为文件传输的瓶颈链路。</li>
+</ul>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://yoursite.com">Samson Yuen</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://yoursite.com/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/">http://yoursite.com/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://yoursite.com/tags/%E6%97%B6%E5%BB%B6/">时延</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://yoursite.com/tags/%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2/">分组交换</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2020/05/08/1-5-%E5%8D%8F%E8%AE%AE%E5%B1%82%E6%AC%A1%E5%8F%8A%E5%85%B6%E6%9C%8D%E5%8A%A1%E6%A8%A1%E5%9E%8B/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">1.5 协议层次及其服务模型</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2020/05/08/1-3-%E7%BD%91%E7%BB%9C%E6%A0%B8%E5%BF%83/"><span class="paginator-prev__text">1.3 网络核心</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-1-分组交换网中的时延概述"><span class="toc-number">1.</span> <span class="toc-text">
+          1.4.1 分组交换网中的时延概述</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本节概述"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">
+          本节概述</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-2-排队时延和丢包"><span class="toc-number">2.</span> <span class="toc-text">
+          1.4.2 排队时延和丢包</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本节概要"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">
+          本节概要</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-3-端到端时延"><span class="toc-number">3.</span> <span class="toc-text">
+          1.4.3 端到端时延</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-4-计算机网络中的吞吐量"><span class="toc-number">4.</span> <span class="toc-text">
+          1.4.4 计算机网络中的吞吐量</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本节概要-1"><span class="toc-number">4.0.0.1.</span> <span class="toc-text">
+          本节概要</span></a></li></ol></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/sakura.svg" alt="avatar"></div><p class="sidebar-ov-author__text">I am Samson</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/SamsonRuan" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://segmentfault.com/" target="_blank" rel="noopener" data-popover="思否" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">sf</span></a><a class="sidebar-ov-social-item" href="https://csdn.com" target="_blank" rel="noopener" data-popover="CSDN" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CSDN</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">9</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">14</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Samson Yuen</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v4.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.0.0-rc.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script type="text/x-mathjax-config">var mathjaxMhchem = '';
+var mathJaxTex = {
+  equationNumbers: {
+    autoNumber: 'AMS'
+  }
+};
+
+if (true) {
+  mathjaxMhchem = 'https://cdn.jsdelivr.net/npm/mathjax-mhchem@3.3.2/mhchem.min.js';
+  MathJax.Ajax.config.path['mhchem'] = mathjaxMhchem;
+
+  mathJaxTex.extensions = [mathjaxMhchem];
+} else {
+  mathJaxTex.extensions = ['AMSmath.js','AMSsymbols.js'];
+}
+
+MathJax.Hub.Config({
+  menuSettings: {
+    zoom: 'None'
+  },
+  showMathMenu: false,
+  jax: ['input/TeX','output/CommonHTML'],
+  extensions: ['tex2jax.js'],
+  TeX: mathJaxTex,
+  tex2jax: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+});
+
+MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+  MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+    if (data.display) {
+      var next = data.script.nextSibling;
+      while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling; }
+      if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next); }
+    }
+  });
+});
+
+MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i = 0; i < all.length; i++) {
+    document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+  }
+});
+</script><script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/utils.js?v=2.0.0-rc.0"></script><script src="/js/stun-boot.js?v=2.0.0-rc.0"></script><script src="/js/scroll.js?v=2.0.0-rc.0"></script><script src="/js/header.js?v=2.0.0-rc.0"></script><script src="/js/sidebar.js?v=2.0.0-rc.0"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end --></body></html>

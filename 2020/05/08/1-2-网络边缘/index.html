@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="renderer" content="webkit"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.0.0-rc.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.0.0-rc.0" type="image/png" sizes="32x32"><meta name="description" content="1.2.1 接入网                           本节概要       接入网(access network),这是指将端系统连接到其边缘路由器(edge router)的物理链路,边缘路由器是端系统到任何其他远程端系统的路径上的第一台路由器。 1. 家庭接人:DSL、电缆、FTTH、拨号和卫星 1.1 数字用户线(Digital Su">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta property="og:type" content="article">
+<meta property="og:title" content="1.2 网络边缘">
+<meta property="og:url" content="http://yoursite.com/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/index.html">
+<meta property="og:site_name" content="Samson&#39;s blog">
+<meta property="og:description" content="1.2.1 接入网                           本节概要       接入网(access network),这是指将端系统连接到其边缘路由器(edge router)的物理链路,边缘路由器是端系统到任何其他远程端系统的路径上的第一台路由器。 1. 家庭接人:DSL、电缆、FTTH、拨号和卫星 1.1 数字用户线(Digital Su">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-5.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-7.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-8.png">
+<meta property="article:published_time" content="2020-05-08T12:17:05.000Z">
+<meta property="article:modified_time" content="2020-05-08T12:36:52.100Z">
+<meta property="article:author" content="Samson Yuen">
+<meta property="article:tag" content="因特网边缘">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-5.png"><meta name="keywords" content="Samson Yuen, Samson's blog"><meta name="description"><title>1.2 网络边缘 | Samson's blog</title><link ref="canonical" href="http://yoursite.com/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.0.0-rc.0"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: true,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-child"></i></span><span class="header-nav-menu-item__text">关于</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Samson's blog</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">1.2 网络边缘</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body">
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><h3 id="1-2-1-接入网">
+          <a href="#1-2-1-接入网" class="heading-link"><i class="fas fa-link"></i></a>1.2.1 接入网</h3>
+      
+        <h6 id="本节概要">
+          <a href="#本节概要" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>接入网(access network),这是指将端系统连接到其边缘路由器(edge router)的物理链路,边缘路由器是端系统到任何其他远程端系统的路径上的第一台路由器。</p>
+<p><strong>1. 家庭接人:DSL、电缆、FTTH、拨号和卫星</strong></p>
+<p>1.1 数字用户线(Digital Subscriber Line)接入</p>
+<p><strong>原文摘录</strong></p>
+<p>住户通常从提供本地电话接入的本地电话公司处获得DSL因特网接入。因此，当使用DSL时，用户的本地电话公司也是它的ISP。每个用户的DSL调制解调器使用现有的电话线(双绞铜线)与位于本地电话公司的本地中心局(CO)中的数字用户线接入复用器(DSLAM)来交换数据。家庭的DSL调制解调器得到数字数据后将其转换为高频音，以通过电话线传输绐本地中心局;来自许多家庭的模拟信号在 DSLAM处被转换回数字形式。</p>
+<p>家庭电话线同时承载了数据和传统的电话信号，它们编码为不同的频率:</p>
+<ul>
+<li>高速下行信道，位于50kHz到1MHz频段；</li>
+<li>中速上行信道，位于4kHz到50kHz频段;</li>
+<li>普通的双向电话信道，位于0到4kHz频段。</li>
+</ul>
+<p><img src="/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-5.png" alt="1-5"></p>
+<p><strong>注释</strong></p>
+<p>以下几点需要注意：</p>
+<ul>
+<li>电话线中传输的都是模拟信号</li>
+<li>分频器的作用就是按照频率将计算机数据信号与电话信号相分离</li>
+<li>调制解调器的作用是将模拟信号与电子信号互相转化<ul>
+<li>将模拟信号转化为数字信号称为解调</li>
+<li>将数字信号转化为模拟信号称为调制</li>
+</ul>
+</li>
+<li>DSLAM的作用相当于分频器与调制解调器的相加，所以也叫复用器</li>
+</ul>
+<p>1.2 电缆因特网接入(cable Internet access)</p>
+<p>略</p>
+<p>1.3 光纤到户(Fiber To The Home,FTTH)</p>
+<p>两种光纤分布体系结构</p>
+<ul>
+<li>主动光纤网络(Active Optical Network,AON)</li>
+<li>被动光纤网络(Passive Optical Network,PON)</li>
+</ul>
+<p><strong>原文摘录</strong></p>
+<p>每个家庭具有一个光纤网络端接器(Optical Network Terminator,ONT)，它由专门的光纤连接到邻近的分配器(splitter)。该分配器把一些家庭(通常少于100个)集结到一根共享的光纤，该光纤再连接到本地电话和公司的中心局中的光纤线路端接器(Optical Line Terminator，OLT)。该OLT提供了光信号和电信号之间的转换，经过本地电话公司路由器与因特网相连。在家庭中，用户将合家庭路由器(通常是无线路由器)与ONT相连，并经过这台家庭路由器接入因特网。</p>
+<p><img src="/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-7.png" alt="1-7"></p>
+<p><strong>注释</strong></p>
+<ul>
+<li>ONT的工作原理与调制解调器相似，是将光信号与数字信号互相转化</li>
+<li>OLT的工作原理与DSLAM相似，只不过不需要进行分频工作，因为FTTH网络中并不与电话信号公用线缆</li>
+</ul>
+<p><strong>2. 企业(和家庭)接人:以太网和WiFi</strong></p>
+<p>2.1 局域网(LAN)接入</p>
+<p>以太网(最流行的局域网接入技术)用户使用双绞铜线与一台以太网交换机相连。以太网交换机或这样相连的交换机网络，则再与更大的因特网相连。</p>
+<p><img src="/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-8.png" alt="1-8"></p>
+<p>2.2 无线(WLAN)接入</p>
+<p>在无线LAN环境中，无线用户从到一个接入点发送/接收分组，该接入点与企业网连接(很可能包括有线以太网)，该企业网再与有线因特网相连。这种接入方式更通俗的称为WiFi</p>
+<p>2.3 广域无线接入：3G和LTE</p>
+<p>移动设备通过蟑窝网提供商运营的基站来发送接收分组。与WiFi不同的是，一个用户仅需要位于基站的数万米（而不是几十米）范围内。</p>
+
+        <h3 id="1-2-2-物理媒体">
+          <a href="#1-2-2-物理媒体" class="heading-link"><i class="fas fa-link"></i></a>1.2.2 物理媒体</h3>
+      
+        <h6 id="本节概要-1">
+          <a href="#本节概要-1" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>本节简要概述一下在因特网中经常使用的传输媒体</p>
+<p>物理媒体的例子包括双绞铜线、同轴电缆、多模光纤缆、陆地无线电频谱和卫星无线电频谱。物理媒体划分为两类:导引型媒体(guided media)和非导引型媒体(unguided media)。对于导引型媒体，电波沿着固体媒体前行，如光缆、双绞铜线或同轴电缆。对于非导引型媒体，电波在空气或外层空间中传播，例如在无线局域网或数字卫星频道中。</p>
+<ol>
+<li>双绞铜线</li>
+</ol>
+<p>双绞线由两根隔离的铜线组成，每根大约1mm粗，以规则的螺旋形式排列着。这两根线被绞合起来，以减少来自邻近类似的双绞线的电气干扰。通常许多双绞线捆扎在一起形成一根电缆，并在这些双绞线外面覆盖上保护性防护层。一对电线(就是两根互相缠绕的双绞线)构成了一个通信链路。</p>
+<ol>
+<li>同轴电缆</li>
+</ol>
+<p>同轴电缆由两个铜导体组成，但是这两个导体是同心的而不是并行。</p>
+<ol>
+<li>光纤</li>
+</ol>
+<p>光纤是一种细而柔软的、能够导引光脉冲的媒体，每个脉冲表示一个比特。一根光纤能够支持极高的比特速率，高达数十甚至数百Gbps。它们不受电磁干扰，长达100km的光缆信号衰减极低，并且很难窃听。这些特征使得光纤成为长途引导型传输媒体，特别是跨海链路。许多长途电话网络现在全面使用光纤，光纤也广泛用于因特网的主干。然而，高成本的光设备，如发射器、接收器和交换机，阻碍光纤在短途传输中的应用，如在LAN或家庭接入网中就不使用它们。</p>
+<ol>
+<li>陆地无线电信道<br>无线电信道承载电磁频谱中的信号。它不需要安装物理线路，并具有穿透墙壁、提供与移动用户的连接以及长距离承载信号的能力，因而成为一种有吸引力的媒体。无线电信道的特性极大地依赖于传播环境和传输信号的距离。环境上的考虑取决于路径损耗和遮挡衰落(即当信号跨距离传播和绕过/通过阻碍物体时信号降低强度)、多径衰落(由于千扰对象的信号反射)以及干扰(由于其他无线电信道或电磁信号)。</li>
+</ol>
+<p>陆地无线电信道能够大致划分为三类:</p>
+<ul>
+<li>一类运行在很短距离（如1米或2米）;</li>
+<li>另一类运行在局域，通常跨越数十到几百米;</li>
+<li>第三类运行在广域，跨越数万米。</li>
+</ul>
+<p>个人设备如无线头戴式耳机、键盘和医疗设备跨短距离运行;在1.2.1节中描述的无线LAN技术使用了局域无线电信道;蜂窝接入技术使用了广域无线电信道。</p>
+<ol>
+<li>卫星无线电信道</li>
+</ol>
+<p>略</p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://yoursite.com">Samson Yuen</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://yoursite.com/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/">http://yoursite.com/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://yoursite.com/tags/%E5%9B%A0%E7%89%B9%E7%BD%91%E8%BE%B9%E7%BC%98/">因特网边缘</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2020/05/08/1-3-%E7%BD%91%E7%BB%9C%E6%A0%B8%E5%BF%83/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">1.3 网络核心</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2020/05/08/1-1-%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%A0%E7%89%B9%E7%BD%91/"><span class="paginator-prev__text">1.1 什么是因特网</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1-接入网"><span class="toc-number">1.</span> <span class="toc-text">
+          1.2.1 接入网</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本节概要"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">
+          本节概要</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-物理媒体"><span class="toc-number">2.</span> <span class="toc-text">
+          1.2.2 物理媒体</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本节概要-1"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">
+          本节概要</span></a></li></ol></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/sakura.svg" alt="avatar"></div><p class="sidebar-ov-author__text">I am Samson</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/SamsonRuan" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://segmentfault.com/" target="_blank" rel="noopener" data-popover="思否" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">sf</span></a><a class="sidebar-ov-social-item" href="https://csdn.com" target="_blank" rel="noopener" data-popover="CSDN" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CSDN</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">9</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">14</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Samson Yuen</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v4.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.0.0-rc.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script type="text/x-mathjax-config">var mathjaxMhchem = '';
+var mathJaxTex = {
+  equationNumbers: {
+    autoNumber: 'AMS'
+  }
+};
+
+if (true) {
+  mathjaxMhchem = 'https://cdn.jsdelivr.net/npm/mathjax-mhchem@3.3.2/mhchem.min.js';
+  MathJax.Ajax.config.path['mhchem'] = mathjaxMhchem;
+
+  mathJaxTex.extensions = [mathjaxMhchem];
+} else {
+  mathJaxTex.extensions = ['AMSmath.js','AMSsymbols.js'];
+}
+
+MathJax.Hub.Config({
+  menuSettings: {
+    zoom: 'None'
+  },
+  showMathMenu: false,
+  jax: ['input/TeX','output/CommonHTML'],
+  extensions: ['tex2jax.js'],
+  TeX: mathJaxTex,
+  tex2jax: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+});
+
+MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+  MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+    if (data.display) {
+      var next = data.script.nextSibling;
+      while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling; }
+      if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next); }
+    }
+  });
+});
+
+MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i = 0; i < all.length; i++) {
+    document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+  }
+});
+</script><script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/utils.js?v=2.0.0-rc.0"></script><script src="/js/stun-boot.js?v=2.0.0-rc.0"></script><script src="/js/scroll.js?v=2.0.0-rc.0"></script><script src="/js/header.js?v=2.0.0-rc.0"></script><script src="/js/sidebar.js?v=2.0.0-rc.0"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end --></body></html>

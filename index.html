@@ -27,15 +27,400 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-child"></i></span><span class="header-nav-menu-item__text">关于</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Samson's blog</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/04/28/1-2-%E8%BF%87%E7%A8%8B%E4%B8%8E%E5%AE%83%E4%BB%AC%E6%89%80%E4%BA%A7%E7%94%9F%E7%9A%84%E8%AE%A1%E7%AE%97/">1.2 过程与它们所产生的计算</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-04-28</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-04-28</span></span></div></header><div class="post-body"><div class="post-excerpt">
-        <!-- hexo-inject:begin --><!-- hexo-inject:end --><h3 id="原文摘录"   >
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-child"></i></span><span class="header-nav-menu-item__text">关于</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Samson's blog</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/05/08/2-1-%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86/">2.1 应用层协议原理</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><h3 id="序言">
+          <a href="#序言" class="heading-link"><i class="fas fa-link"></i></a>序言</h3>
+      
+        <h6 id="原文摘录">
+          <a href="#原文摘录" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h6>
+      <p> ……网络核心设备(分组交换机和路由器)并不在应用层起作用，而仅在较低层起作用，特别是位于网络层及下面层次。</p>
+
+        <h3 id="2-1-1-网络应用程序体系结构">
+          <a href="#2-1-1-网络应用程序体系结构" class="heading-link"><i class="fas fa-link"></i></a>2.1.1 网络应用程序体系结构</h3>
+      <p> 现代网络应用程序采用两种主流结构：</p>
+<ul>
+<li>客户-服务器结构</li>
+<li>对等(p2p)结构</li>
+</ul>
+<p>客户-服务器体系结构中，客户端发出请求，服务器做出响应。服务器具有固<br>定的、周知的地址，该地址称为IP地址。</p>
+<p>在p2p体系结构中，应用程序在主机对之间使用直接连接，这些主机被称为对等方。这些对等方并不为服务提供商所有，而是为用户控制的端系统所有，因此这种对等方通信不必通过专门的服务器。</p>
+<p>某些应用具有混合的体系结构，它结合了客户-服务器和P2P的元素。例如，对于许多即时讯息应用而言，服务器被用于跟踪用户的IP地址，但用户到用户的报文在用户主机之间(无需通过中间服务器)直接发送。</p>
+
+        <h3 id="2-1-2-进程通信">
+          <a href="#2-1-2-进程通信" class="heading-link"><i class="fas fa-link"></i></a>2.1.2 进程通信</h3>
+      <p>在两个不同端系统上的进程，通过跨越计算机网络交换报文(message)而相互通信。</p>
+<ol>
+<li>客户和服务器进程</li>
+</ol>
+<p>网络应用程序由成对的进程组成，这些进程通过网络相互发送报文。对每对通信进程，我们通常将这两个进程之一标识为客户(client)，而另一个进程标识为服务器(server)。</p>
+<p>我们对客户进程与服务器进程的定义如下：<br><strong>在给定的一对进程之间的通信会话场景中，发起通信(即在该会话开始起与其他进程的联系)的进程被标识为客户，在会话开始时等待联系的进程是服务器</strong></p>
+<ol>
+<li>进程与计算机网络之间的接口</li>
+</ol>
+<p>进程向另一个进程发送的报文必须通过下面一层的网络。进程通过一个称为套接字(socket)的软件接口向网络发送报文和从网络接收报文。</p>
+<p>套接字是一台主机内应用层与运输层之间的接口，应用程序开发者可以控制套接字在应用层端的一切，但是对该套接字的运输层端几乎没有控制权。应用程序开发者对于运输层的控制仅限于:</p>
+<ul>
+<li>选择运输层协议;</li>
+<li>也许能设定几个运输层参数，如最大缓存和最大报文段长度等；</li>
+</ul>
+<p>所以套接字的作用就是将报文从应用层传输到运输层。运输层受操作系统的控制，再通过相应的协议传输到网络中。</p>
+<p><img src="/2020/05/08/2-1-%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86/2-3.png" alt="2-3"></p>
+<ol>
+<li>进程寻址</li>
+</ol>
+<p>进程为了向在另一台主机上运行的进程发送分组，接收进程需要有一个地址，需要定义两种信息:</p>
+<ul>
+<li>主机的地址;</li>
+<li>定义在目的主机中的接收进程的标识符；</li>
+</ul>
+<p>在因特网中，主机有其IP地址(IP address)标识,IP地址是一个32比特的量且它能够唯一地标识该主机。除了知道报文送往目的地的主机地址外，发送进程还必须指定运行在接收主机上的接收进程(更具体地说，接收套接字)。目的地端口号(port number)用于这个目的。用于所有因特网标准协议的周知端口号的列表能够在<span class="exturl"><a class="exturl__link" href="http://www.iana.org" target="_blank" rel="noopener">http://www.iana.org</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 处找到。</p>
+
+        <h3 id="2-1-3-可供应用程序使用的运输服务">
+          <a href="#2-1-3-可供应用程序使用的运输服务" class="heading-link"><i class="fas fa-link"></i></a>2.1.3 可供应用程序使用的运输服务</h3>
+      
+        <h6 id="本届概述">
+          <a href="#本届概述" class="heading-link"><i class="fas fa-link"></i></a>本届概述</h6>
+      <p>前面讲过套接字是应用程序进程和运输层协议之间的接口。在发送端的应用程序将报文推进该套接字。在该套接字的另一侧，运输层协议负责使该报文进入接收进程的套接字。</p>
+<p>包括因特网在内的很多网络提供了不止一种运输层协议。当开发一个应用时，必须选择一种可用的运输层协议。如何做出这种选择呢？</p>
+<p>我们可以从应用程序的所需要的服务要求对其所使用的运输层协议进行判断：可靠数据传输、吞吐量、定时和安全性。</p>
+<ol>
+<li>数据可靠传输</li>
+</ol>
+<p>某些应用程序必须要求传输的数据被毫无差错的完整运输到另一端，这时，必须确保由应用程序的一端发送的数据正确、完全地交付给该应用程序的另一端。如果一个协议提供了这样的确保数据交付服务，就认为提供了可靠数据传输(reliable data transfer)。当一个运输协议提供这种服务时，发送进程只要将其数据传递进套接字，就可以完全相信该数据将能无差错地到达接收进程。</p>
+<p>当一个运输层协议不提供可靠数据传输时，由发送进程发送的某些数据可能不能够到达接收进程。这可能能被容忍丢失的应用（loss-tolerant application)所接受。</p>
+<ol>
+<li>吞吐量</li>
+</ol>
+<p>吞吐量就是发送进程能够向接收进程交付比特的速率。对于某些带宽敏感的应用(比如网络游戏)，需要确保运输层协议能够以某种特定的速率提供确保的可用吞吐量。使用这种服务，该应用程序能够请求r比特/秒的确保吞吐量，并且该运输协议能够确保可用吞吐量总是为至少r比特/秒。</p>
+<ol>
+<li>定时</li>
+</ol>
+<p>运输层协议有时也需要提供定时保证。一个保证的例子如:发送方注入进套接字中的每个比特到达接收方的套接字不迟于100ms。这种服务将对交互式实时应用程序有吸引力，如因特网电话、虚拟环境电话会议和多方游戏，所有这些服务为了有效性而要求数据交付有严格的时间限制。</p>
+<ol>
+<li>安全性</li>
+</ol>
+<p>运输协议能够为应用程序提供一种或多种安全性服务。运输协议能够加密由发送进程传输的所有数据，在接收主机中，运输层协议能够在将数据交付给接收进程之前解密这些数据。</p>
+
+        <h3 id="2-1-4-因特网提供的运输服务">
+          <a href="#2-1-4-因特网提供的运输服务" class="heading-link"><i class="fas fa-link"></i></a>2.1.4 因特网提供的运输服务</h3>
+      <p>2.1.3节中讲的是一般的网络运输层应该提供的服务，现在我们来看一下因特网中提供的运输层服务是怎么样的。</p>
+<p>因特网(更一般的是TCP/P网络)为应用程序提供两个运输层协议，即UDP和TCP。</p>
+<ol>
+<li>TCP服务</li>
+</ol>
+<p>TCP服务模型包括面向连接服务和可靠数据传输服务。</p>
+<ul>
+<li>面向连接的服务：在应用层数据报文开始流动之前，TCP让客户和服务器互相交换运输层控制信息。在握手阶段后，一个TCP连接(TCP connection)就在两个进程的套接字之间建立了。当应用程序结束报文发送时，必须拆除该连接。</li>
+<li>可靠的数据传输服务：通信进程能够依靠TCP，无差错、按适当顺序交付所有发送的数据。</li>
+</ul>
+<p>TCP协议还具有拥塞控制机制，当发送方和接收方之间的网络出现拥塞时，TCP的拥塞控制机制会抑制发送进程（客户或服务器）。</p>
+<ol>
+<li>UDP服务</li>
+</ol>
+<p>UDP是一种不提供不必要服务的轻量级运输协议，它仅提供最小服务。UDP是无连接的，因此在两个进程通信前没有握手过程。UDP协议提供一种不可靠数据传送服务，也就是说，当进程将一个报文发送进UDP套接字时，UDP协议并不保证该报文将到达接收进程。不仅如此，到达接收进程的报文也可能是乱序到达的。</p>
+<p>UDP没有包括拥塞控制机制，所以UDP的发送端可以用它选定的任何速率向其下层(网络层)注入数据。</p>
+<ol>
+<li>因特网运输协议所不提供的服务</li>
+</ol>
+<p>对TCP和UDP的简要描述中，明显地缺少了对吞吐量或定时保证的讨论，然而事实也是如此，这些服务目前的因特网运输协议并没有提供。总之，今天的因特网通常能够为时间敏感应用提供满意的服务，但它不能提供任何定时或带宽保证。</p>
+
+        <h3 id="2-1-5-应用层协议">
+          <a href="#2-1-5-应用层协议" class="heading-link"><i class="fas fa-link"></i></a>2.1.5 应用层协议</h3>
+      <p>应用层协议定义了：</p>
+<ul>
+<li>交换的报文类型，例如请求报文和响应报文。</li>
+<li>各种报文类型的语法，如报文中的各个字段及这些字段是如何描述的。</li>
+<li>字段的语义，即这些字段中包含的信息的含义。</li>
+<li>一个进程何时以及加何发送报文，对报立进行响应的规则。</li>
+</ul>
+
+        <h3 id="2-1-6-本书涉及的网络应用">
+          <a href="#2-1-6-本书涉及的网络应用" class="heading-link"><i class="fas fa-link"></i></a>2.1.6 本书涉及的网络应用</h3>
+      <p>略</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/05/08/1-5-%E5%8D%8F%E8%AE%AE%E5%B1%82%E6%AC%A1%E5%8F%8A%E5%85%B6%E6%9C%8D%E5%8A%A1%E6%A8%A1%E5%9E%8B/">1.5 协议层次及其服务模型</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>暂时略过，等看完全书再整理</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/">1.4 分组交换网中的时延、丢包和吞吐量</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="1-4-1-分组交换网中的时延概述">
+          <a href="#1-4-1-分组交换网中的时延概述" class="heading-link"><i class="fas fa-link"></i></a>1.4.1 分组交换网中的时延概述</h3>
+      
+        <h6 id="本节概述">
+          <a href="#本节概述" class="heading-link"><i class="fas fa-link"></i></a>本节概述</h6>
+      <p>当分组从上游结点到达路由器A时，路由器A检查该分组的首部以决定该分组的适当出链路，并将该分组导向该链路。仅当在该链路没有其他分组正在传输并且没有其他分组排在该队列前面时，才能在这条链路上传输该分组;如果该链路当前正繁忙或有其他分组已经在该链路上排队，则新到达的分组则将参与排队。</p>
+<p><strong>节点时延的类型</strong></p>
+<ul>
+<li>处理时延</li>
+</ul>
+<p>检查分组首部和决定将该分组导向何处所需要的时间是处理时延。在这种结点处理之后，路由器将该分组引向通往路由器B链路之前的队列。</p>
+<ul>
+<li>排队时延</li>
+</ul>
+<p>当分组经过处理到达链路队列时，如果在它之前有正在传输的分组，则在前面的分组传输完成之前，该分组需要进行等待。等待的时间被称为是排队时延。</p>
+<ul>
+<li>传输时延</li>
+</ul>
+<p>仅当所有已经到达的分组被传输之后，才能传输刚到达的分组。传输时延是将所有分组的比特推向链路所需要的时间。</p>
+<p>建设链路的传输速度是Rbps，分组的大小是Lb，那么路由器传输该分组的时间是：<script type="math/tex">T=\frac{L}{R}</script></p>
+<ul>
+<li>传播时延</li>
+</ul>
+<p>一旦一个比特被推向链路，该比特需要向路由器B传播。从该链路的起点到路由器B传播所需要的时间是传播时延。该比特以该链路的传播速率传播。该传播速率取决于该链路的物理媒体(即光纤、双绞铜线等)，其速率范围是$2×10^8-3×10^8m/s$，这等于或略小于光速。该传播时延等于两台路由器之间的距离除以传播速率。一旦该分组的最后一个比特传播到结点B，该比特及前面的所有比特被存储于路由器B。</p>
+<p><strong>传输时延和传播时延之间的比较</strong></p>
+<p>传输时延是路由器将分组推出所需要的时间，它是分组长度和链路传输速率的<br>函数，而与两台路由器之间的距离无关。另一方面，传播时延是一个比特从一台路由器向另一台路由器传播所需要的时间，它是两台路由器之间距离的函数，而与分组长度或链路传输速率无关。</p>
+<p>如果我们令$d_{proc}$,$d_{queue}$,$d_{trans}$和$d_{prop}$分别表示处理时延、排队时延、传输时延和传播时延，则结点的总时延由下式给定：</p>
+<script type="math/tex; mode=display">d_{node}=d_{proc}+d_{queue}+d_{trans}+d_{prop}</script>
+        <h3 id="1-4-2-排队时延和丢包">
+          <a href="#1-4-2-排队时延和丢包" class="heading-link"><i class="fas fa-link"></i></a>1.4.2 排队时延和丢包</h3>
+      
+        <h6 id="本节概要">
+          <a href="#本节概要" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>令a表示分组达到队列的平均速度，即平均每秒钟到达a个分组。R是传输速率，即队列中推出比特的速率。也假定所有的分组大小都是L比特。那么比特达到队列的平局速率是La bps。比率$\frac{L\cdot a}{R}$被称为<strong>流量强度</strong>。</p>
+<ul>
+<li>如果La/R&gt;1，就说明比特到达队列的平均速率超过比特被推送出队列的速率。因此，流量工程中的一条金科玉律是：<strong>设计系统时流量强度不能大于1</strong></li>
+<li>如果La/R&lt;=1,这时候并不意味着没有排队时延，而是<strong>取决于到达流量的性质</strong>。如果流量的达到不是线性的，而是突发性质的，那么即使流量强度小于1，也会造成很大的排队时延。比如假设每过(L/R)N秒同时达到N个分组，那么此时第n个传输的分组就具有了(L/R)(n-1)的 时延。</li>
+</ul>
+<p><strong>丢包</strong></p>
+<p>一条链路前的队列的容量是有限的，当达到的分组发现一个满队列时，由于没有地方存储该分组，路由器将会丢弃该分组，造成丢包的现象</p>
+
+        <h3 id="1-4-3-端到端时延">
+          <a href="#1-4-3-端到端时延" class="heading-link"><i class="fas fa-link"></i></a>1.4.3 端到端时延</h3>
+      <p>略</p>
+
+        <h3 id="1-4-4-计算机网络中的吞吐量">
+          <a href="#1-4-4-计算机网络中的吞吐量" class="heading-link"><i class="fas fa-link"></i></a>1.4.4 计算机网络中的吞吐量</h3>
+      
+        <h6 id="本节概要-1">
+          <a href="#本节概要-1" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>吞吐量就是<strong>单位时间内链路中通过了多少比特的数据</strong>，是一种衡量链路中数据传输量大小的指标。当然，这个概念也可以用于某个具体的文件中，比如，某文件大小为F，从A端发送到B端总共花去T秒，则该文件传输的平均吞吐量为F/T bps。</p>
+<p>令$R_s$表示服务器与路由器之间的链路速率,$R_c$表示路由器与客户之间的链路速率。显然，这台服务器不能以快于$R_s$bps的速率通过其链路注入比特;这台路由器也不能以快于$R_c$bps的速率转发比特。如果$R_s&lt;R_c$，则由该服务器注入的比特将顺畅地通过路由器“流动”，并以速率$R_s$bps到达客户，给定了$R_s$bps的吞吐量。在另一方面，如果$R_c&lt;R_s$bps，则该路由器将不能够以接收它们那样快的速率来转发比特。在这种情况下，比特将以速率$R_c$离开该路由器，从而得到端到端昋吞吐量$R_c$。<strong>对于这种简单的两链路的网络，其吞吐量是min{$R_s$，$R_c$}，这就是说，它是瓶颈链路(bottleneck link)的传输速率</strong>。</p>
+<p>应用与对两条链路网络的分析相同的方法，我们发现从服务器到客户的文件传输的吞吐量是min{$R_1$，$R_2$，…，$R_2$}，这同样仍是沿着服务器和客户之间路径的瓶颈链路的速率。</p>
+<p>鉴于当今因特网的核心部分装备了高速率的链路，因此，吞吐量的限制因素往往是底层的接入网的链路传输速率。</p>
+<p><img src="/2020/05/08/1-4-%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F/1-21b.png" alt="1-20b"></p>
+<p>考虑上图情况，假设$R_s=2 Mbps$，$R_c=1 Mbps$,$R=5 Mbps$。那么，假设某时十台服务器同时向十台客户端传送文件，此时同时要进入R链路的比特流为20 Mbps，但R由于其传输速度限制只能向十台客户端输出5 Mbps的比特流。结果就是每台客户端能接收的流量为 500 kbps。所以，对客户端而言，此时的网络吞吐量为500 kbps。</p>
+<p>这就说明：<strong>网络吞吐量也受到其他干扰流量的影响</strong>。</p>
+<p><strong>总结</strong></p>
+<ul>
+<li>吞吐量取决于数据流过的链路的传输速率。</li>
+<li>没有其他干扰流量时，其吞吐量能够近似为沿着源和目的地之间路径的最小传输速率。</li>
+<li>吞吐量不仅取决于沿着路径的传输速率，而且取决于干扰流量。特别是，如果许多其他的数据流也通过这条链路流动，一条具有高传输速率的链路仍然可能成为文件传输的瓶颈链路。</li>
+</ul>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/05/08/1-3-%E7%BD%91%E7%BB%9C%E6%A0%B8%E5%BF%83/">1.3 网络核心</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="1-3-1-分组交换">
+          <a href="#1-3-1-分组交换" class="heading-link"><i class="fas fa-link"></i></a>1.3.1 分组交换</h3>
+      
+        <h6 id="本节概要">
+          <a href="#本节概要" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <ol>
+<li>存储转发分组</li>
+</ol>
+<p>进行网络数据传输时，源端系统将长报文划分为较小的数据块，称之为分组(packet)。多数分组交换机使用的时存储转发传输(store-and-forward transmission)机制。<strong>存储转发机制是指在交换机能够开始向输出链路传输该分组的第一个比特之前，必须接收到整个分组</strong>。这也就是说，在该机制下，<strong>分组在链路中的传输虽然是以bit为单位的，但在路由器中的传输是以分组为单位的</strong>。</p>
+<p>假设有一个报文被分成三个L比特大小的分组，由A端发送向B端，中间由一个交换机和两条速度为Rbps的链路相连。由于<strong>交换机接收整个分组之前不能进行转发，因此，在第一个分组全部交换机之前(这需要L/R秒)第二个分组的比特不能向交换机发送数据</strong>。所以，第一个分组达到目的端的时候，第二个分组才到达交换机。于是，第二个分组开始，每个分组达到目的端的实际耗时是L/R秒。因此，三个分组全部到达目的端的总耗时是4L/R。</p>
+<p>将情况推广到更一般：P个分组，每个分组L比特，N条链路，Rbps的网速，那么这个报文从源端到目的端的传输总耗时是多少呢？</p>
+<p>分析：第一个分组到达目的端的时候，此时第二个分组已经被存储在最后一个交换机，离目的端只差一条链路。第二个分组到达目的端时，第三个分组亦然。因此，总的时间消耗就是：(L/R)<em>N+(p-1)</em>(L/R)。即：</p>
+<script type="math/tex; mode=display">T=(N+P-1)\cdot\frac{L}{R}</script><ol>
+<li>排队时延和分组丢失</li>
+</ol>
+<p>分组交换机具有一个<strong>输出缓存(output buffer)</strong>也成为输出队列(output queue)。如果到达的分组需要传输到某条链路，但发现该链路正忙于传输其他分组，该到达分组必须在该输出缓存中等待。因此，除了存储转发时延以外，分组还要承受输出缓存的排队时延(queue delay)。</p>
+<p>因为缓存空间的大小是有限的，一个到达的分组可能发现该缓存已被其他等待传输的分组完全充满了。在此情况下，将出现分组丢失(丢包 packet lost),到达的分组或已经排队的分组之一将被丢弃。</p>
+<ol>
+<li>转发表和路由选择协议</li>
+</ol>
+<p>路由器应当怎样决定自己应该向哪条链路进行分组转发呢？</p>
+<p>在因特网中，每个端系统具有一个称为IP地址的地址。当源主机要向目的端系统发送一个分组时，在该分组的首部包含了目的地的IP地址。当一个分组到达网络中的路由器时，路由器检查该分组的目的地址的一部分，并向一台相邻路由器转发该分组。更特别的是，每台路由器具有一个<strong>转发表(forwarding table)，用于将目的地址(或目的地址的一部分)映射成为输出链路</strong>。当某分组到达一台路由器时，路由器检查该地址，并用这个目的地址搜索其转发表，以发现适当的出链路。路由器则将分组导向该出链路。</p>
+
+        <h3 id="1-3-2-电路交换">
+          <a href="#1-3-2-电路交换" class="heading-link"><i class="fas fa-link"></i></a>1.3.2 电路交换</h3>
+      <p>略</p>
+
+        <h3 id="1-3-3-网络的网络">
+          <a href="#1-3-3-网络的网络" class="heading-link"><i class="fas fa-link"></i></a>1.3.3 网络的网络</h3>
+      
+        <h6 id="本节概要-1">
+          <a href="#本节概要-1" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>端系统通过局域网、DSL等方式接入ISP，这种ISP被称为是接入ISP。而接入ISP之间自身也需要互联。本节简要介绍几种ISP互联的方式，进而提出当代因特网的结构。</p>
+<ul>
+<li><strong>网络结构1:单一的全球承载ISP互联所有接入ISP</strong></li>
+</ul>
+<p>这是一种分为两层的网络结构，全球所有的接入ISP都必须接入到第一层ISP中。</p>
+<ul>
+<li><strong>网络结构2:接入ISP与多个全球承载ISP相联</strong> </li>
+</ul>
+<p>这种方案基本上与方案一相同，只是第一层ISP有多个并且它们之间也需要互相连接</p>
+<ul>
+<li><strong>网络结构3:多层次ISP</strong></li>
+</ul>
+<p>接入ISP确实可以直接接入到全球ISP中，但更加一般的情况却是：接入ISP先与本区域的区域ISP相连接，区域ISP再与全球ISP相连。其中区域ISP向接入ISP收取费用，全球ISP向区域ISP收取费用。</p>
+<p>当然，区域ISP内部也可以进一步划分为多个层次，比如在中国，往往是一个城市组成一个城市ISP，向上组成省级ISP，再向上组成国家ISP，最后由国家ISP与全球ISP相连。此时，区域ISP内部就具有了城市-省-国家三个层次。</p>
+<ul>
+<li><p><strong>网络结构4: PoP,对等，IXP，多宿</strong></p>
+<ul>
+<li><p>PoP(Point of Presence)<br>一个PoP是提供商网络中的一台或多台路由器(在相同位置)群组，其中客户ISP能够与提供商ISP连接。对于要与提供商PoP连接的客户网络，它能从第三方通信提供商租用高速链路直接将它的路由器之一连接到位于该PoP的一台路由器。也就是说，<strong>PoP是下层ISP与上层ISP相连的接口</strong>。</p>
+</li>
+<li><p>多宿(multi-home)<br>一个下层ISP可以与两个或以上的ISP相连。当一个ISP多宿时，即使它的提供商之一出现故障，也能够进行分组和交换。</p>
+</li>
+<li><p>对等(peer)<br>位于相同等级结构层次的邻近一对ISP能够对等(peer)，这就是说，能够直接将它们的网络连到一起，使它们之间的所有流量经直接连接而不是通过上游的中间ISP传输。当两个IsP对等时，通常不进行结算，即任一个ISP不向其对等付费。第一层ISP也与另一个第一层ISP对等，它们之间无结算。</p>
+</li>
+<li><p>IXP(Internet Exchange Point)<br>第三方公司创建一个因特网交换点(Internet Exchange point，DXP)(通常在一个有自己的交换机的独立建筑物中)IXP是一个汇合点，多个ISP能够在这里共同对等。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>网络结构3已经形成了现代互联网的基本架构，结构4在此基础上添加了以上几个特点。</p>
+<ul>
+<li>网络结构5:内容提供商作为顶级ISP</li>
+</ul>
+<p>一般来说，内容提供商是作为区域ISP的客户的，但是某些大型的内容提供商，比如谷歌，搭建了属于自己的专用网络。独立于公共因特网，并且与较低层ISP相连。结构5也就是现在互联网的真实结构模型。</p>
+<p><img src="/2020/05/08/1-3-%E7%BD%91%E7%BB%9C%E6%A0%B8%E5%BF%83/1-15.png" alt="1-15"></p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/">1.2 网络边缘</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="1-2-1-接入网">
+          <a href="#1-2-1-接入网" class="heading-link"><i class="fas fa-link"></i></a>1.2.1 接入网</h3>
+      
+        <h6 id="本节概要">
+          <a href="#本节概要" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>接入网(access network),这是指将端系统连接到其边缘路由器(edge router)的物理链路,边缘路由器是端系统到任何其他远程端系统的路径上的第一台路由器。</p>
+<p><strong>1. 家庭接人:DSL、电缆、FTTH、拨号和卫星</strong></p>
+<p>1.1 数字用户线(Digital Subscriber Line)接入</p>
+<p><strong>原文摘录</strong></p>
+<p>住户通常从提供本地电话接入的本地电话公司处获得DSL因特网接入。因此，当使用DSL时，用户的本地电话公司也是它的ISP。每个用户的DSL调制解调器使用现有的电话线(双绞铜线)与位于本地电话公司的本地中心局(CO)中的数字用户线接入复用器(DSLAM)来交换数据。家庭的DSL调制解调器得到数字数据后将其转换为高频音，以通过电话线传输绐本地中心局;来自许多家庭的模拟信号在 DSLAM处被转换回数字形式。</p>
+<p>家庭电话线同时承载了数据和传统的电话信号，它们编码为不同的频率:</p>
+<ul>
+<li>高速下行信道，位于50kHz到1MHz频段；</li>
+<li>中速上行信道，位于4kHz到50kHz频段;</li>
+<li>普通的双向电话信道，位于0到4kHz频段。</li>
+</ul>
+<p><img src="/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-5.png" alt="1-5"></p>
+<p><strong>注释</strong></p>
+<p>以下几点需要注意：</p>
+<ul>
+<li>电话线中传输的都是模拟信号</li>
+<li>分频器的作用就是按照频率将计算机数据信号与电话信号相分离</li>
+<li>调制解调器的作用是将模拟信号与电子信号互相转化<ul>
+<li>将模拟信号转化为数字信号称为解调</li>
+<li>将数字信号转化为模拟信号称为调制</li>
+</ul>
+</li>
+<li>DSLAM的作用相当于分频器与调制解调器的相加，所以也叫复用器</li>
+</ul>
+<p>1.2 电缆因特网接入(cable Internet access)</p>
+<p>略</p>
+<p>1.3 光纤到户(Fiber To The Home,FTTH)</p>
+<p>两种光纤分布体系结构</p>
+<ul>
+<li>主动光纤网络(Active Optical Network,AON)</li>
+<li>被动光纤网络(Passive Optical Network,PON)</li>
+</ul>
+<p><strong>原文摘录</strong></p>
+<p>每个家庭具有一个光纤网络端接器(Optical Network Terminator,ONT)，它由专门的光纤连接到邻近的分配器(splitter)。该分配器把一些家庭(通常少于100个)集结到一根共享的光纤，该光纤再连接到本地电话和公司的中心局中的光纤线路端接器(Optical Line Terminator，OLT)。该OLT提供了光信号和电信号之间的转换，经过本地电话公司路由器与因特网相连。在家庭中，用户将合家庭路由器(通常是无线路由器)与ONT相连，并经过这台家庭路由器接入因特网。</p>
+<p><img src="/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-7.png" alt="1-7"></p>
+<p><strong>注释</strong></p>
+<ul>
+<li>ONT的工作原理与调制解调器相似，是将光信号与数字信号互相转化</li>
+<li>OLT的工作原理与DSLAM相似，只不过不需要进行分频工作，因为FTTH网络中并不与电话信号公用线缆</li>
+</ul>
+<p><strong>2. 企业(和家庭)接人:以太网和WiFi</strong></p>
+<p>2.1 局域网(LAN)接入</p>
+<p>以太网(最流行的局域网接入技术)用户使用双绞铜线与一台以太网交换机相连。以太网交换机或这样相连的交换机网络，则再与更大的因特网相连。</p>
+<p><img src="/2020/05/08/1-2-%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98/1-8.png" alt="1-8"></p>
+<p>2.2 无线(WLAN)接入</p>
+<p>在无线LAN环境中，无线用户从到一个接入点发送/接收分组，该接入点与企业网连接(很可能包括有线以太网)，该企业网再与有线因特网相连。这种接入方式更通俗的称为WiFi</p>
+<p>2.3 广域无线接入：3G和LTE</p>
+<p>移动设备通过蟑窝网提供商运营的基站来发送接收分组。与WiFi不同的是，一个用户仅需要位于基站的数万米（而不是几十米）范围内。</p>
+
+        <h3 id="1-2-2-物理媒体">
+          <a href="#1-2-2-物理媒体" class="heading-link"><i class="fas fa-link"></i></a>1.2.2 物理媒体</h3>
+      
+        <h6 id="本节概要-1">
+          <a href="#本节概要-1" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>本节简要概述一下在因特网中经常使用的传输媒体</p>
+<p>物理媒体的例子包括双绞铜线、同轴电缆、多模光纤缆、陆地无线电频谱和卫星无线电频谱。物理媒体划分为两类:导引型媒体(guided media)和非导引型媒体(unguided media)。对于导引型媒体，电波沿着固体媒体前行，如光缆、双绞铜线或同轴电缆。对于非导引型媒体，电波在空气或外层空间中传播，例如在无线局域网或数字卫星频道中。</p>
+<ol>
+<li>双绞铜线</li>
+</ol>
+<p>双绞线由两根隔离的铜线组成，每根大约1mm粗，以规则的螺旋形式排列着。这两根线被绞合起来，以减少来自邻近类似的双绞线的电气干扰。通常许多双绞线捆扎在一起形成一根电缆，并在这些双绞线外面覆盖上保护性防护层。一对电线(就是两根互相缠绕的双绞线)构成了一个通信链路。</p>
+<ol>
+<li>同轴电缆</li>
+</ol>
+<p>同轴电缆由两个铜导体组成，但是这两个导体是同心的而不是并行。</p>
+<ol>
+<li>光纤</li>
+</ol>
+<p>光纤是一种细而柔软的、能够导引光脉冲的媒体，每个脉冲表示一个比特。一根光纤能够支持极高的比特速率，高达数十甚至数百Gbps。它们不受电磁干扰，长达100km的光缆信号衰减极低，并且很难窃听。这些特征使得光纤成为长途引导型传输媒体，特别是跨海链路。许多长途电话网络现在全面使用光纤，光纤也广泛用于因特网的主干。然而，高成本的光设备，如发射器、接收器和交换机，阻碍光纤在短途传输中的应用，如在LAN或家庭接入网中就不使用它们。</p>
+<ol>
+<li>陆地无线电信道<br>无线电信道承载电磁频谱中的信号。它不需要安装物理线路，并具有穿透墙壁、提供与移动用户的连接以及长距离承载信号的能力，因而成为一种有吸引力的媒体。无线电信道的特性极大地依赖于传播环境和传输信号的距离。环境上的考虑取决于路径损耗和遮挡衰落(即当信号跨距离传播和绕过/通过阻碍物体时信号降低强度)、多径衰落(由于千扰对象的信号反射)以及干扰(由于其他无线电信道或电磁信号)。</li>
+</ol>
+<p>陆地无线电信道能够大致划分为三类:</p>
+<ul>
+<li>一类运行在很短距离（如1米或2米）;</li>
+<li>另一类运行在局域，通常跨越数十到几百米;</li>
+<li>第三类运行在广域，跨越数万米。</li>
+</ul>
+<p>个人设备如无线头戴式耳机、键盘和医疗设备跨短距离运行;在1.2.1节中描述的无线LAN技术使用了局域无线电信道;蜂窝接入技术使用了广域无线电信道。</p>
+<ol>
+<li>卫星无线电信道</li>
+</ol>
+<p>略</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/05/08/1-1-%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%A0%E7%89%B9%E7%BD%91/">1.1 什么是因特网</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="1-1-1-具体构成描述">
+          <a href="#1-1-1-具体构成描述" class="heading-link"><i class="fas fa-link"></i></a>1.1.1 具体构成描述</h3>
+      
+        <h6 id="本节概要">
+          <a href="#本节概要" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p><strong>1. 因特网的构成</strong></p>
+<ul>
+<li>主机(host)或端系统(end system):计算设备</li>
+<li>通信链路(communication link)：物理传输媒介<ul>
+<li>同轴电缆</li>
+<li>铜线</li>
+<li>光纤</li>
+<li>无线电频谱</li>
+</ul>
+</li>
+<li>分组交换机<ul>
+<li>路由器(router):用于网络核心中</li>
+<li>链路层交换机(link-layer switch):用于接入网中</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 因特网的接入</strong></p>
+<p>端系统通过因特网服务提供商(Internet Service Provider,ISP)接入因特网。<strong>(一新按：需要注意的是，这里所说的ISP并非指某种商业机构，而是指一个个由多段链路和交换机组成的网络，也就是接入网，这种底层的ISP往往通过链路层交换机转发信息)</strong><br>各ISP的接入方式：</p>
+<ul>
+<li>线缆调制解调器</li>
+<li>DSL</li>
+<li>高速局域网</li>
+<li>无线</li>
+<li>拨号调制解调器</li>
+</ul>
+<p>一个ISP的覆盖范围有限，往往是一个公司，一个小区或者一个学校。为了将所有的端系统在全球范围内互联，为端系统提供接入的ISP也必须互联。底层的ISP通过国家的，国际的高层ISP互联。高层的ISP通过高速光纤和高速路由器互联。<strong>无论是高层的ISP还是底层的ISP，每个都是独立管理的。</strong></p>
+<p><strong>3. 因特网的协议</strong></p>
+<p>端系统,分组交换机和其他因特网组件都需要遵循一系列的协议(protocal),这些协议控制因特网中的信息接受与发送</p>
+<p><strong>4. 因特网标准的制定</strong></p>
+<p>有了协议的概念之后，还需要对协议如何实现进行统一，从而形成标准化的协议实现。<br>因特网工程任务组(Internet Engineering Task Force，IETF)就是执行该任务的组织，该组织制定出的准文档称为请求评论(Request For Comment，RFC)</p>
+
+        <h3 id="1-1-2-服务描述">
+          <a href="#1-1-2-服务描述" class="heading-link"><i class="fas fa-link"></i></a>1.1.2 服务描述</h3>
+      
+        <h6 id="本节概要-1">
+          <a href="#本节概要-1" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h6>
+      <p>上一节我们描述了因特网本身的软硬件组成，这一节我们从<strong>为应用程序提供服务的基础设施</strong>的角度来描述因特网。我们可以认为因特网是一个运行在端系统上的<strong>分布式应用程序的平台</strong>。那么，运行在不同端系统上的应用程序怎样才能使用用特网互相发送数据呢？</p>
+<p>与因特网相连的端系统提供了一个应用程序编程接口(Application Programming Interface，API),该API规定了运行在一个端系统上的软件请求因特网基础设施向运行在另一个端系统上的特定目的地软件交付数据的方式。因特网AP是一套发送软件必须遵循的规则集合，因此因特网能够将数据交付给目的地。</p>
+
+        <h3 id="1-1-3-什么是协议">
+          <a href="#1-1-3-什么是协议" class="heading-link"><i class="fas fa-link"></i></a>1.1.3 什么是协议</h3>
+      
+        <h6 id="原文摘录">
+          <a href="#原文摘录" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h6>
+      <p>…在因特网中，凡是涉及两个或多个远程通信实体的所有活动都受协议的制约…</p>
+<p>从上述的人类活动和网络例子中可见，<strong>报文的交换以及发送和接收这些报文时所采取的动作</strong>是定义一个协议的关键元素:</p>
+<p><strong>一个协议定义了在两个或多个通信实体之间交换的报文格式和次序，以及报文发送和/或接收一条报文或其他事件所采取的动作</strong>。</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/05/04/%E9%97%B2%E8%A1%8C%E6%B8%B8%E8%AE%B0/">杂思</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-05-04</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>今日一改往日的颓废，吃过晚饭决意出去散步，虽然只在家门口小路略作徘徊，但心境却已然走出很远。现在的人，往往在城市里有几处房产为傲，可我却是喜欢田园风光的。家边便是稻田，五月份稻穗渐已显黄，迎面吹来的风中混合着稻子和泥土的味道，质朴温和，令我心安。——2020年5月4日</p>
+<p>现实是严峻的，自欺是无用的，逃避是不可取的，那么问题来了，该如何行为呢？——2020年5月8日</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/04/28/1-2-%E8%BF%87%E7%A8%8B%E4%B8%8E%E5%AE%83%E4%BB%AC%E6%89%80%E4%BA%A7%E7%94%9F%E7%9A%84%E8%AE%A1%E7%AE%97/">1.2 过程与它们所产生的计算</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-04-28</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="原文摘录">
           <a href="#原文摘录" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>在这一节里，我们将考察由一些简单过程所产生的计算过程的“形状”，还将研究这些计算过程消耗各种重要计算资源（时间和空间）的速率。</p>
 
-        <h3 id="1-2-1-线性的递归和迭代"   >
+        <h3 id="1-2-1-线性的递归和迭代">
           <a href="#1-2-1-线性的递归和迭代" class="heading-link"><i class="fas fa-link"></i></a>1.2.1 线性的递归和迭代</h3>
       
-        <h3 id="本节概要"   >
+        <h3 id="本节概要">
           <a href="#本节概要" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h3>
       <p>本节以求n!为例讲述线性递归计算模型与线性迭代计算模型的概念及其区别。</p>
 <p>线性递归计算模型求阶乘：</p>
@@ -49,17 +434,17 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p>……在迭代的情况里，在计算过程中的任何一点，那几个程序变量都提供了有关计算状态的一个完整描述。……<br>而对于递归计算过程而言，这里还存在着另外的一些“隐含”信息，它们并未保存在程字变量里，而是由解释器维持着，指明了在所推迟的运算所形成的链条里的漫游中，“这一计<br>算过程处在何处“。这个链条越长，需要保存的信息也就越多。</p>
 <p>在做迭代与递归之间的比较时，我们必须当心，不要搞混了递归计算过程概念和递归过程的概念。当我们说一个过程是递归的时候，论述的是一个语法形式上的事实，说明这个<br>过程的定义中（直接或者间接地）引用了该过程本身。在说某一计算过程具有某种模式时（例如，线性递归），我们说的是这一计算过程的进展方式，而不是相应过程书写上的语法形式。当我们说某个递归过程（例如 fact-iter）将产生出一个迭代的计算过程时，可能会使人感到不舒服。然而这一计算过程确实是迭代的，因为它的状态能由其中的三个状态变量完全刻画，解释器在执行这一计算过程时，只需要保持这三个变量的轨迹就足够了。</p>
 
-        <h3 id="练习"   >
+        <h3 id="练习">
           <a href="#练习" class="heading-link"><i class="fas fa-link"></i></a>练习</h3>
       <p> <strong> 练习1.9</strong></p>
 <p> 第一个是线性递归的计算过程，因为前面有个inc，第二个是迭代的计算过程，因为a与b两个变量就可以完全描述当前的计算状态。</p>
 <p><strong>1.10</strong></p>
 <p>略</p>
 
-        <h3 id="1-2-2-树形递归"   >
+        <h3 id="1-2-2-树形递归">
           <a href="#1-2-2-树形递归" class="heading-link"><i class="fas fa-link"></i></a>1.2.2 树形递归</h3>
       
-        <h3 id="本节概要-1"   >
+        <h3 id="本节概要-1">
           <a href="#本节概要-1" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h3>
       <p>实现斐波那契数列的两种算法：</p>
 <ul>
@@ -80,7 +465,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">Fib</span> n)</span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">Fib-iter</span> n counter a b)</span><br><span class="line">        (<span class="name"><span class="builtin-name">cond</span></span> ((<span class="name"><span class="builtin-name">=</span></span> n counter) a)</span><br><span class="line">            (<span class="name"><span class="builtin-name">else</span></span> (<span class="name">Fib-iter</span> n (<span class="name"><span class="builtin-name">+</span></span> <span class="number">1</span> counter) b (<span class="name"><span class="builtin-name">+</span></span> a b)))</span><br><span class="line">        )</span><br><span class="line">    </span><br><span class="line">    )</span><br><span class="line">    (<span class="name">Fib-iter</span> n <span class="number">0</span> <span class="number">0</span> <span class="number">1</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure>
 <p><strong>实例：换零钱方式的统计</strong><br>略</p>
 
-        <h3 id="练习-1"   >
+        <h3 id="练习-1">
           <a href="#练习-1" class="heading-link"><i class="fas fa-link"></i></a>练习</h3>
       <p><strong>练习1.11</strong></p>
 <p>递归过程<br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">f</span> n)</span><br><span class="line">    (<span class="name"><span class="builtin-name">cond</span></span> ((<span class="name"><span class="builtin-name">&lt;</span></span> n <span class="number">3</span>) n)</span><br><span class="line">          (<span class="name"><span class="builtin-name">else</span></span> (<span class="name"><span class="builtin-name">+</span></span> (<span class="name">f</span> (<span class="name"><span class="builtin-name">-</span></span> n <span class="number">1</span>))</span><br><span class="line">                   (<span class="name"><span class="builtin-name">*</span></span> <span class="number">2</span> (<span class="name">f</span> (<span class="name"><span class="builtin-name">-</span></span> n <span class="number">2</span>)))</span><br><span class="line">                   (<span class="name"><span class="builtin-name">*</span></span> <span class="number">3</span> (<span class="name">f</span> (<span class="name"><span class="builtin-name">-</span></span> n <span class="number">3</span>)))</span><br><span class="line">                )</span><br><span class="line">          )</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure><br>迭代过程</p>
@@ -89,10 +474,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p><strong>练习1.13</strong></p>
 <p>与编程无关，是纯粹的数学问题，略</p>
 
-        <h3 id="1-2-3-增长的阶"   >
+        <h3 id="1-2-3-增长的阶">
           <a href="#1-2-3-增长的阶" class="heading-link"><i class="fas fa-link"></i></a>1.2.3 增长的阶</h3>
       
-        <h3 id="原文摘录-1"   >
+        <h3 id="原文摘录-1">
           <a href="#原文摘录-1" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>……（对于同一个计算需求）不同的计算过程在消耗计算资源的速率上可能存在着巨大差异。</p>
 <p>令n是一个参数，它能作为问题规模的一种度量，令R(n)是一个计算过程在处理规模为n的问题时所需要的资源量。</p>
@@ -103,7 +488,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p> 对任何足够大的n值都成立（换们话说，对足够大的n，值R(n)总位于k1<em>f(n)和k2</em>f(n)之间）。</p>
 <p>增长的阶为我们提供了对计算过程行为的一种很粗略的描述。例如，某廿算过程需要n^2步另一计算过程需要1000n^2步，还有一个计算过程需要3n^2+10n+17步，它们增长的阶都是Θ(n^2)。但在另一方面，增长的阶也为我们在问题规模改变时，预期一个计算过程的行为变化提供了有用的线索。</p>
 
-        <h3 id="注释"   >
+        <h3 id="注释">
           <a href="#注释" class="heading-link"><i class="fas fa-link"></i></a>注释</h3>
       <p>算法分析的目的就是衡量算法的性能。我们总能在所需要处理的问题中找到一个可以衡量问题规模大小的参数，记作n。也总可以找到在输入规模为n时，该算法所占用的资源量，记作R(n)。那么，<strong>建立起一个n到R(n)的映射，就等于完成了对于任意输入的所对应的消耗的一般性描述，这就是算法分析的本质。</strong></p>
 <p>有时候，n到R(n)的映射是充分复杂的，为了能够更加简便的进行分析，我们就定义了Θ记号，<strong>Θ记号法的本质在于找到一个函数f(n),使得当n充分大时，f(n)和真实的算法消耗R(n)在数量上是线性齐次的。这也就是说：f(n)和R(n)的数量级是同等的。于是f(n)可以代替R(n)来描述某算法在输入规模为n时的资源消耗量。</strong> 因此，简单说来，Θ记号法舍去了无关乎紧要的细枝末节（低次项）只<strong>找同阶的最简函数。</strong></p>
@@ -116,7 +501,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p>但是在这里需要注意：任何的算法分析都是<strong>不精准</strong>的，因为我们首先已经假设了每一条基本机器指令的执行时间都是相同的。但这是不可能的，+与<em>显然耗时不同，函数调用和循环迭代也显然不同。更何况还使用了Θ记号，舍去了一切的系数和低次项。因此，<em>*算法分析的作用仅仅只是提供某个算法在消耗资源时的增长趋势</em></em>，而非精确描述该算法在n输入时究竟耗时多少。</p>
 <p>时间复杂度则是指算法在运行时在内存中最多的时候占用了多少的空间。</p>
 
-        <h3 id="练习-2"   >
+        <h3 id="练习-2">
           <a href="#练习-2" class="heading-link"><i class="fas fa-link"></i></a>练习</h3>
       <p><strong>1.14</strong></p>
 <p>略 </p>
@@ -126,10 +511,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <li>b. 时间和空间复杂度都是log(n)</li>
 </ul>
 
-        <h3 id="1-2-4-求幂"   >
+        <h3 id="1-2-4-求幂">
           <a href="#1-2-4-求幂" class="heading-link"><i class="fas fa-link"></i></a>1.2.4 求幂</h3>
       
-        <h3 id="本节概要-2"   >
+        <h3 id="本节概要-2">
           <a href="#本节概要-2" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h3>
       <p>求一个数b的n次方可以有三种计算模型或算法：</p>
 <ul>
@@ -141,16 +526,16 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">expt</span></span> b n)</span><br><span class="line">    (<span class="name"><span class="builtin-name">cond</span></span> ((<span class="name"><span class="builtin-name">=</span></span> <span class="number">0</span> n) <span class="number">1</span>)</span><br><span class="line">          ((<span class="name"><span class="builtin-name">even?</span></span> n) (<span class="name">square</span> (<span class="name"><span class="builtin-name">expt</span></span> b (<span class="name"><span class="builtin-name">/</span></span> n <span class="number">2</span>))))</span><br><span class="line">          (<span class="name"><span class="builtin-name">else</span></span> (<span class="name"><span class="builtin-name">*</span></span> b (<span class="name"><span class="builtin-name">expt</span></span> b (<span class="name"><span class="builtin-name">-</span></span> n <span class="number">1</span>))))</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure>
 <p>连续求平方模型的精妙之处就在于，该算法将算法的空间复杂度和时间复杂度都降到了 $\Theta(\log n)$。另外，需要注意的是，even?是scheme内置的函数，可以直接使用，当然也可以手动实现：<br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">even?</span></span> n)</span><br><span class="line">    (<span class="name"><span class="builtin-name">=</span></span> <span class="number">0</span> (<span class="name"><span class="builtin-name">remainder</span></span> n <span class="number">2</span>))</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure><br>remainder也是scheme内置的过程，是一个求模运算符。</p>
 
-        <h3 id="练习-3"   >
+        <h3 id="练习-3">
           <a href="#练习-3" class="heading-link"><i class="fas fa-link"></i></a>练习</h3>
       <p><strong>1.16</strong></p>
 <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">expt</span></span> x n)</span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">iter</span> a x n)</span><br><span class="line">        (<span class="name"><span class="builtin-name">cond</span></span> ((<span class="name"><span class="builtin-name">=</span></span> n <span class="number">0</span>) a)</span><br><span class="line">            ((<span class="name"><span class="builtin-name">odd?</span></span> n) (<span class="name">iter</span> (<span class="name"><span class="builtin-name">*</span></span> a x) x (<span class="name"><span class="builtin-name">-</span></span> n <span class="number">1</span>)))</span><br><span class="line">            (<span class="name"><span class="builtin-name">else</span></span> (<span class="name">iter</span> a (<span class="name"><span class="builtin-name">*</span></span> x x) (<span class="name"><span class="builtin-name">/</span></span> n <span class="number">2</span>)))</span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">    (<span class="name">iter</span> <span class="number">1</span> x n)</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure>
 <p><strong>1.17</strong><br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">*</span></span> a b)</span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">double</span> x)</span><br><span class="line">        (<span class="name"><span class="builtin-name">+</span></span> x x)</span><br><span class="line">    )</span><br><span class="line">    (<span class="name"><span class="builtin-name">cond</span></span> ((<span class="name"><span class="builtin-name">=</span></span> b <span class="number">0</span>) <span class="number">0</span>)</span><br><span class="line">          ((<span class="name"><span class="builtin-name">even?</span></span> b)(<span class="name">double</span> (<span class="name"><span class="builtin-name">*</span></span> a (<span class="name"><span class="builtin-name">/</span></span> b <span class="number">2</span>))))</span><br><span class="line">          (<span class="name"><span class="builtin-name">else</span></span> (<span class="name"><span class="builtin-name">+</span></span> a (<span class="name"><span class="builtin-name">*</span></span> a (<span class="name"><span class="builtin-name">-</span></span> b <span class="number">1</span>))))</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure><br><strong>1.18</strong><br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">double</span> a)(<span class="name"><span class="builtin-name">+</span></span> a a))</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">*</span></span> a b)</span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">iter</span> product a b)</span><br><span class="line">        (<span class="name"><span class="builtin-name">cond</span></span> ((<span class="name"><span class="builtin-name">=</span></span> b <span class="number">0</span>) product)</span><br><span class="line">            ((<span class="name"><span class="builtin-name">odd?</span></span> b) (<span class="name">iter</span> (<span class="name"><span class="builtin-name">+</span></span> a product) a (<span class="name"><span class="builtin-name">-</span></span> b <span class="number">1</span>)))</span><br><span class="line">            (<span class="name"><span class="builtin-name">else</span></span> (<span class="name">iter</span> product (<span class="name">double</span> a) (<span class="name"><span class="builtin-name">/</span></span> b <span class="number">2</span>)))</span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">    (<span class="name">iter</span> <span class="number">0</span> a b)</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure><br><strong>1.19</strong></p>
 
-        <h3 id="1-2-5-最大公约数"   >
+        <h3 id="1-2-5-最大公约数">
           <a href="#1-2-5-最大公约数" class="heading-link"><i class="fas fa-link"></i></a>1.2.5 最大公约数</h3>
       
-        <h3 id="本节概要-3"   >
+        <h3 id="本节概要-3">
           <a href="#本节概要-3" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h3>
       <p>求两数的最大公约数可以利用欧几里得算法：<strong>如果r是a除以b的余数，那么a和b的公约数正好也是b的r的公约数</strong>。</p>
 <p><center>GCD(a,b)=GCD(b,r)</center><br><br></p>
@@ -163,16 +548,16 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 </ul>
 <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">gcd</span></span> a b)</span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">=</span></span> b <span class="number">0</span>)</span><br><span class="line">        a</span><br><span class="line">        (<span class="name"><span class="builtin-name">gcd</span></span> b (<span class="name"><span class="builtin-name">remainder</span></span> a b))</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure>
 
-        <h3 id="练习-4"   >
+        <h3 id="练习-4">
           <a href="#练习-4" class="heading-link"><i class="fas fa-link"></i></a>练习</h3>
       <p><strong>1.20</strong></p>
 <p>应用序则进行5次remainder即可，因为每次gcd函数每次调用自身时会进行运算。</p>
 <p>正则序则要运算很多次，因为每次gcd函数调用自身的时候都不会对remainder进行求值，而是等到所有递归出口的时候再统一进行运算。这样，“堆积”在最后一层调用的remainder就需要运算很多次。（具体多少次，时间有限，笔者实在懒于详细展开）</p>
 
-        <h3 id="1-2-6-实例：素数检测"   >
+        <h3 id="1-2-6-实例：素数检测">
           <a href="#1-2-6-实例：素数检测" class="heading-link"><i class="fas fa-link"></i></a>1.2.6 实例：素数检测</h3>
       
-        <h3 id="本节概要-4"   >
+        <h3 id="本节概要-4">
           <a href="#本节概要-4" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h3>
       <p>本节将描述两种检查整数n是否素数的方法：</p>
 <ul>
@@ -190,7 +575,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p><strong>费马检查</strong></p>
 <p>略</p>
 
-        <h3 id="练习-5"   >
+        <h3 id="练习-5">
           <a href="#练习-5" class="heading-link"><i class="fas fa-link"></i></a>练习</h3>
       <p><strong>1.21</strong></p>
 <p>与例题同。略</p>
@@ -203,7 +588,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p><strong>1.27</strong><br>略</p>
 <p><strong>1.28</strong><br>略</p>
 
-        <h3 id="总结"   >
+        <h3 id="总结">
           <a href="#总结" class="heading-link"><i class="fas fa-link"></i></a>总结</h3>
       <p>如果说1.1大节是以scheme语言为例子讲解了计算机程序中的基本语法：</p>
 <ul>
@@ -283,11 +668,11 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 </tbody>
 </table></div>
 </div>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/04/28/1-1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/">1.1 程序设计的基本元素</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-04-28</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-04-28</span></span></div></header><div class="post-body"><div class="post-excerpt">
-        <h3 id="1-1-1-表达式"   >
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/04/28/1-1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/">1.1 程序设计的基本元素</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-04-28</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-05-08</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="1-1-1-表达式">
           <a href="#1-1-1-表达式" class="heading-link"><i class="fas fa-link"></i></a>1.1.1 表达式</h3>
       
-        <h3 id="原文摘录"   >
+        <h3 id="原文摘录">
           <a href="#原文摘录" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>每一种强有力的语言都必须提供如下三种机制：</p>
 <ul>
@@ -296,14 +681,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <li>抽象的方法，通过它们可以为复合对象命名，并将它们当作单元去操作</li>
 </ul>
 
-        <h3 id="注释"   >
+        <h3 id="注释">
           <a href="#注释" class="heading-link"><i class="fas fa-link"></i></a>注释</h3>
       <p>基本表达式包含两种：<strong>基本数据和基本过程</strong>。3  4 (define a 5)。此时，3 4 a 都是基本的数据。基本的过程则指scheme解释器内置的计算过程（或者函数），比如+ - * /这些运算符，其本质就是一个被解释器预先实现了的过程。</p>
 <p>仅有基本的数据与基本的过程显然是不够的，因此还需要将它们用某种方法组合起来，形成一个复合的表达式。比如，(+ (<em> 3 3)(</em> 4 4))就是一个复合表达式（或者称之为组合表达式）。因为此时多个基本数据和基本过程不再相互独立，而是联合了起来，组成了一个可以求值的新的表达式。</p>
 <p>当然,<strong>在我们需要将某个组合操作中所蕴涵的计算形式从具体的计算中抽取出来的时候，抽象的方法就开始发挥作用了</strong>。考虑如下情况，假设现在有100个表示直角三角形两直角边长的数对(3,4)(5,6)(7,8)…，需要求其第三边长的平方。诚然，我们可以使用(+ (<em> 3 3)(</em> 4 4))  (+ (<em> 5 5)(</em> 6 6))…去解决问题。但显然，这是种糟糕的解决方案，因为可以看出，每一个求平方和的组合表达式，除了参与计算的具体数字不同之外，其计算中所遵循的规则和步骤是完全一致的！也就是说，每个表达式都具有同样的计算形式！既然如此，那为何不从中提取出这种普遍共通的计算形式以简化计算呢？<br>因此，我们可以定义一种程序类型，将共通的计算形式提取出来存放在这种类型中，这种类型无关乎具体的参与运算的数据，而仅仅表示某一种计算的形式。这样，当要使用具体的数据进行实际的计算时，只需要将数据放入到该程序类型中进行计算就可以了。而这种程序类型我们可以称之为<strong>过程（函数）</strong></p>
 <p>比如，我们可以定义一个求平方和的过程<br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">sum-square</span> a b)</span><br><span class="line">        (<span class="name"><span class="builtin-name">+</span></span> (<span class="name"><span class="builtin-name">*</span></span> a a)(<span class="name"><span class="builtin-name">*</span></span> b b))</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure><br>于是我们就此完成了一次抽象。在这个意义上，我们可以说，<strong>抽象就是抛开具体的数据，对计算形式进行抽取并且为其命名的行为</strong>。比如，如果要计算数对(3 4)的平方和,只需要执行(sum-square 3 4)的操作就可以了，得到的计算结果将是25。</p>
 
-        <h3 id="补注：关于计算机科学中抽象的概念的再解释"   >
+        <h3 id="补注：关于计算机科学中抽象的概念的再解释">
           <a href="#补注：关于计算机科学中抽象的概念的再解释" class="heading-link"><i class="fas fa-link"></i></a>补注：关于计算机科学中抽象的概念的再解释</h3>
       <p>在计算机科学中，抽象具有两个层面的含义：</p>
 <ul>
@@ -319,23 +704,23 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <li>面向对象的抽象，是一种将过程整体进行封装后打包，作为一个基本的单位输出到其他运算当中，或者作为其他更大的模块的一个可拆卸的基本组成部分的抽象。这种抽象时面向外部的。这种抽象的着重点在于将过程名视为一种特殊的运算符，以及对过程具体实现的隐藏。</li>
 </ul>
 
-        <h3 id="1-1-2-命名和环境"   >
+        <h3 id="1-1-2-命名和环境">
           <a href="#1-1-2-命名和环境" class="heading-link"><i class="fas fa-link"></i></a>1.1.2 命名和环境</h3>
       
-        <h3 id="原文摘录-1"   >
+        <h3 id="原文摘录-1">
           <a href="#原文摘录-1" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>程序设计语言中一个必不可少的方面，就是就是它需要提供一种通过名字去使用计算对象的方式。我们将名字标识符称为变量，它的值也就是它所对应的那个变量。</p>
 <p>define…允许我们用一个简单的名字去引用一个组合运算的结果。</p>
 <p>…我们可以将值与符号相关联，而后又能提取出这些值，这意味着解释器必须维护某种存储能力，以便保持某种名字-值对偶的轨迹。这种存储被称为环境。</p>
 
-        <h3 id="注释-1"   >
+        <h3 id="注释-1">
           <a href="#注释-1" class="heading-link"><i class="fas fa-link"></i></a>注释</h3>
       <p>这里所说的环境其实就是程序中的命名空间。</p>
 
-        <h3 id="1-1-3-组合式的求值"   >
+        <h3 id="1-1-3-组合式的求值">
           <a href="#1-1-3-组合式的求值" class="heading-link"><i class="fas fa-link"></i></a>1.1.3 组合式的求值</h3>
       
-        <h3 id="原文摘录-2"   >
+        <h3 id="原文摘录-2">
           <a href="#原文摘录-2" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>要求值一个表达式，做下面的事情：</p>
 <ol>
@@ -351,26 +736,26 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 </ul>
 <p>我们可以将第二种规定看作是第三种规定的特殊情况，为此只需将像+和*一类的运算符也包含在全局环境里，并将相应的指令序列作为与之关联的“值”…</p>
 
-        <h3 id="注释-2"   >
+        <h3 id="注释-2">
           <a href="#注释-2" class="heading-link"><i class="fas fa-link"></i></a>注释</h3>
       <p>刚才我们已经说过，+ - *  /之类的内部运算符，本质上其实是一个个的过程，而这里又说，内部运算符的值就是能完成相应操作的机器指令序列。由此可见，过程在解释器中的本质其实就是一段段的机器指令，而过程名则是在环境中被关联到这些机器指令的变量或者标识符。</p>
 
-        <h3 id="1-1-4-复合过程"   >
+        <h3 id="1-1-4-复合过程">
           <a href="#1-1-4-复合过程" class="heading-link"><i class="fas fa-link"></i></a>1.1.4 复合过程</h3>
       
-        <h3 id="原文摘录-3"   >
+        <h3 id="原文摘录-3">
           <a href="#原文摘录-3" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">square</span> x)(<span class="name"><span class="builtin-name">*</span></span> x x))</span><br></pre></td></tr></table></div></figure>
 <p>这样，我们就有了一个复合过程，给它取的名字是square…求值这一定义的结果是创建起一个复合过程，并将它关联于名字square。</p>
 
-        <h3 id="注释-3"   >
+        <h3 id="注释-3">
           <a href="#注释-3" class="heading-link"><i class="fas fa-link"></i></a>注释</h3>
       <p>创建一个复合过程的本质就是生成一段机器指令，并将该指令在环境中关联于相应的名字。这里所说的复合过程，是相对于前面所说的基本过程而言的，基本过程就是解释器内部预置的过程，复合过程就是用户自定义的过程。本质上其实没有任何区别。</p>
 
-        <h3 id="1-1-5-过程应用的代换模型（过程的求值步骤）"   >
+        <h3 id="1-1-5-过程应用的代换模型（过程的求值步骤）">
           <a href="#1-1-5-过程应用的代换模型（过程的求值步骤）" class="heading-link"><i class="fas fa-link"></i></a>1.1.5 过程应用的代换模型（过程的求值步骤）</h3>
       
-        <h3 id="原文摘录-4"   >
+        <h3 id="原文摘录-4">
           <a href="#原文摘录-4" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>对于复合过程，过程应用的计算过程是：</p>
 <ul>
@@ -379,13 +764,13 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p>…这种计算过程称为过程应用的代换模型</p>
 <p><strong>应用序和正则序</strong></p>
 
-        <h3 id="原文摘录-5"   >
+        <h3 id="原文摘录-5">
           <a href="#原文摘录-5" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>按照1.1.3节给出有关求值的描述，解释器首先对运算符和各个运算对象求值，而后将得到的过程应用于得到的实际参数。</p>
 <p>…另一种求值模型是先不求出运算对象的值，直到实际需要它们的值时再去做。采用这种求值方式，我们就应该首先用运算对象表达式去代换形式参数，直到得到一个只包含基本运算符的表达式，然后再去执行求值。</p>
 <p>这种<strong>完全展开而后归约</strong>的求值模型称为正则序求值，与之对应的时现在解释器里实际使用的<strong>先求值参数而后应用</strong>的方式，它称为应用序求值。</p>
 
-        <h3 id="注释-4"   >
+        <h3 id="注释-4">
           <a href="#注释-4" class="heading-link"><i class="fas fa-link"></i></a>注释</h3>
       <p>例：以(f 5)为例，用两种模型求值，考察其中的不同之处<br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">sum-of-square</span> a b) </span><br><span class="line">        (<span class="name"><span class="builtin-name">+</span></span> (<span class="name">square</span> a)(<span class="name">square</span> b))</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">f</span> a)</span><br><span class="line">    (<span class="name">sum-of-square</span> (<span class="name"><span class="builtin-name">+</span></span> <span class="number">1</span> a)(<span class="name"><span class="builtin-name">*</span></span> <span class="number">2</span> a))</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure><br><strong>应用序求值步骤</strong>：<br>(f a)  ——&gt;</p>
 <p>(sum-of-square (+ 1 a)(* 2 a))   ——&gt; //对运算符f进行求值，即取出过程体</p>
@@ -413,10 +798,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <li>应用序会对实际参数取代形式参数之后的运算对象表达式进行求值，当所有的运算对象表达式求值完毕后，再继续对下一个过程名进行求值展开，直到所有嵌套的过程名被全部展开完毕。<strong>在整个过程的求值过程中，该模型的运算对象始终是一个数值而非组合表达式</strong></li>
 </ul>
 
-        <h3 id="1-1-6-条件表达式和谓词"   >
+        <h3 id="1-1-6-条件表达式和谓词">
           <a href="#1-1-6-条件表达式和谓词" class="heading-link"><i class="fas fa-link"></i></a>1.1.6 条件表达式和谓词</h3>
       
-        <h3 id="本节概要"   >
+        <h3 id="本节概要">
           <a href="#本节概要" class="heading-link"><i class="fas fa-link"></i></a>本节概要</h3>
       <p>如果想要用语言表述一个数的绝对值|x|，那么就需要用到条件表达式cond/if和谓词。<br>可以这样子写：</p>
 <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">abs</span></span> x)</span><br><span class="line">    (<span class="name"><span class="builtin-name">cond</span></span></span><br><span class="line">        ((<span class="name"><span class="builtin-name">&lt;</span></span> x <span class="number">0</span>) (<span class="name">-x</span>))</span><br><span class="line">        ((<span class="name"><span class="builtin-name">=</span></span> X <span class="number">0</span>) <span class="number">0</span>)</span><br><span class="line">        (<span class="name"><span class="builtin-name">else</span></span> x)</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure>
@@ -426,7 +811,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p>除了基本算术运算符+ - <em> /，基本比较运算符（即谓词运算符）&lt; &gt; &gt;= &lt;=之外（注意，scheme中没有!=,如果你想使用!=,需要这样做 <em>*(not (= 3 4))</em></em> ），还有复合运算符and，or,not。</p>
 <p>借助复合运算符，我们可以重定义解释器内部的&lt;=运算符：<br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">&lt;=</span></span> x y)</span><br><span class="line">    (<span class="name"><span class="builtin-name">or</span></span> (<span class="name"><span class="builtin-name">=</span></span> x y)</span><br><span class="line">        (<span class="name"><span class="builtin-name">&lt;</span></span> x y)</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure></p>
 
-        <h3 id="练习"   >
+        <h3 id="练习">
           <a href="#练习" class="heading-link"><i class="fas fa-link"></i></a>练习</h3>
       <p><strong>1.1</strong></p>
 <p>略</p>
@@ -438,20 +823,20 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p><strong>1.5</strong></p>
 <p>如果采用应用序求值，会导致程序陷入无限循环，采用正则序则返回0</p>
 
-        <h3 id="1-1-7-采用牛顿法求平方根"   >
+        <h3 id="1-1-7-采用牛顿法求平方根">
           <a href="#1-1-7-采用牛顿法求平方根" class="heading-link"><i class="fas fa-link"></i></a>1.1.7 采用牛顿法求平方根</h3>
       
-        <h3 id="原文摘录-6"   >
+        <h3 id="原文摘录-6">
           <a href="#原文摘录-6" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>计算机如何求出平方根呢？最常用的就是牛顿的逐步逼近方法。这一方法告诉我们：如果对x的平方根的值有了一个猜测y,那么就可以通过执行一个简单操作去得到更好的猜测：只需要y和x/y的平均值（它更接近实际的平方根值）</p>
 
-        <h3 id="注释-5"   >
+        <h3 id="注释-5">
           <a href="#注释-5" class="heading-link"><i class="fas fa-link"></i></a>注释</h3>
       <p>…我们可以将这一基本策略写成下面的过程:</p>
 <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"># 主函数</span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">sqrt-iter</span> guess x)</span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name">good-enough?</span> guess x)</span><br><span class="line">        guess</span><br><span class="line">        (<span class="name">sqrt-iter</span> (<span class="name">improve</span> guess x) x)</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"># 若不够精确，则取出下一个猜测值</span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">improve</span> guess x)</span><br><span class="line">    (<span class="name">average</span> (<span class="name"><span class="builtin-name">/</span></span> x guess) guess)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">average</span> x y)(<span class="name"><span class="builtin-name">/</span></span> (<span class="name"><span class="builtin-name">+</span></span> x y) <span class="number">2</span>))</span><br><span class="line"></span><br><span class="line"># 判断是否达到精度：看猜测值的平方与x的差的绝对值是否小于0.001</span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">good-enough?</span> guess x)</span><br><span class="line">    (<span class="name"><span class="builtin-name">&lt;</span></span> </span><br><span class="line">        (<span class="name"><span class="builtin-name">abs</span></span> (<span class="name"><span class="builtin-name">-</span></span> x (<span class="name">square</span> guess))) </span><br><span class="line">        <span class="number">0.001</span></span><br><span class="line">    )   </span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">square</span> x)(<span class="name"><span class="builtin-name">*</span></span> x x))</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">abs</span></span> x)</span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&lt;</span></span> x <span class="number">0</span>)</span><br><span class="line">        (<span class="name"><span class="builtin-name">-</span></span> x)</span><br><span class="line">        x</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure>
 <p>当然，有结构更加优雅的版本：由于good-enough?和improve过程都是主函数的具有特定功能的辅助函数，而不是普遍适用的通用工具类函数。因此可以将它们的定义放在主函数体内。而abs,sqaure,average都是工具类函数，因此定义可以放在主函数外部，以便其他函数也可以对其进行调用。<br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">square</span> x)(<span class="name"><span class="builtin-name">*</span></span> x x))</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">abs</span></span> x)</span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&lt;</span></span> x <span class="number">0</span>)</span><br><span class="line">        (<span class="name"><span class="builtin-name">-</span></span> x)</span><br><span class="line">        x</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">average</span> x y)(<span class="name"><span class="builtin-name">/</span></span> (<span class="name"><span class="builtin-name">+</span></span> x y) <span class="number">2</span>))</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">sqrt-iter</span> guess x)</span><br><span class="line"></span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">improve</span> guess x)</span><br><span class="line">        (<span class="name">average</span> (<span class="name"><span class="builtin-name">/</span></span> x guess) guess)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">good-enough?</span> guess x)</span><br><span class="line">        (<span class="name"><span class="builtin-name">&lt;</span></span> </span><br><span class="line">            (<span class="name"><span class="builtin-name">abs</span></span> (<span class="name"><span class="builtin-name">-</span></span> x (<span class="name">square</span> guess))) </span><br><span class="line">            <span class="number">0.001</span></span><br><span class="line">        )   </span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name">good-enough?</span> guess x)</span><br><span class="line">        guess</span><br><span class="line">        (<span class="name">sqrt-iter</span> (<span class="name">improve</span> guess x) x)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">)</span><br></pre></td></tr></table></div></figure><br>最后，还可以继续进行改进：既然两个辅助函数被定义在了主函数内部，那么主函数的形式参数x和guess必定是对两个辅助函数也是适用的，既然如此，那就没必要再对辅助函数显式地设置形式参数了。<br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">square</span> x)(<span class="name"><span class="builtin-name">*</span></span> x x))</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">abs</span></span> x)</span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&lt;</span></span> x <span class="number">0</span>)</span><br><span class="line">        (<span class="name"><span class="builtin-name">-</span></span> x)</span><br><span class="line">        x</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">average</span> x y)(<span class="name"><span class="builtin-name">/</span></span> (<span class="name"><span class="builtin-name">+</span></span> x y) <span class="number">2</span>))</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">sqrt-iter</span> guess x)</span><br><span class="line"></span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">improve</span>)</span><br><span class="line">        (<span class="name">average</span> (<span class="name"><span class="builtin-name">/</span></span> x guess) guess)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">good-enough?</span>)</span><br><span class="line">        (<span class="name"><span class="builtin-name">&lt;</span></span> </span><br><span class="line">            (<span class="name"><span class="builtin-name">abs</span></span> (<span class="name"><span class="builtin-name">-</span></span> x (<span class="name">square</span> guess))) </span><br><span class="line">            <span class="number">0.001</span></span><br><span class="line">        )   </span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name">good-enough?</span>)</span><br><span class="line">        guess</span><br><span class="line">        (<span class="name">sqrt-iter</span> (<span class="name">improve</span>) x)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">)</span><br></pre></td></tr></table></div></figure><br>最后，我们还需要为sqrt-iter过程套上一层外衣，这是因为sqrt-iter需要指定两个参数，一个是用户初次猜测的值，一个是需要求平方根的值。如果将这个过程交给用户使用，那么这将是不符合大部分人的使用习惯的，因此，需要套上一层sqrt的过程作为对外封装的外衣：<br><figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">square</span> x)(<span class="name"><span class="builtin-name">*</span></span> x x))</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">abs</span></span> x)</span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&lt;</span></span> x <span class="number">0</span>)</span><br><span class="line">        (<span class="name"><span class="builtin-name">-</span></span> x)</span><br><span class="line">        x</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">average</span> x y)(<span class="name"><span class="builtin-name">/</span></span> (<span class="name"><span class="builtin-name">+</span></span> x y) <span class="number">2</span>))</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">sqrt</span></span> x)</span><br><span class="line"></span><br><span class="line">    (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">sqrt-iter</span> guess)</span><br><span class="line"></span><br><span class="line">        (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">improve</span>)</span><br><span class="line">            (<span class="name">average</span> (<span class="name"><span class="builtin-name">/</span></span> x guess) guess)</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        (<span class="name"><span class="builtin-name">define</span></span> (<span class="name">good-enough?</span>)</span><br><span class="line">            (<span class="name"><span class="builtin-name">&lt;</span></span> </span><br><span class="line">                (<span class="name"><span class="builtin-name">abs</span></span> (<span class="name"><span class="builtin-name">-</span></span> x (<span class="name">square</span> guess))) </span><br><span class="line">                <span class="number">0.001</span></span><br><span class="line">            )   </span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        (<span class="name"><span class="builtin-name">if</span></span> (<span class="name">good-enough?</span>)</span><br><span class="line">            guess</span><br><span class="line">            (<span class="name">sqrt-iter</span> (<span class="name">improve</span>) x)</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    )</span><br><span class="line">   </span><br><span class="line">    (<span class="name">sqrt-iter</span> <span class="number">1</span>)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">sqrt</span></span> <span class="number">3</span>)</span><br><span class="line"></span><br><span class="line"><span class="number">97/56</span></span><br></pre></td></tr></table></div></figure></p>
 
-        <h3 id="练习-1"   >
+        <h3 id="练习-1">
           <a href="#练习-1" class="heading-link"><i class="fas fa-link"></i></a>练习</h3>
       <p><strong>练习1.6</strong></p>
 <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">average</span> x y)</span><br><span class="line">	(<span class="name"><span class="builtin-name">/</span></span> (<span class="name"><span class="builtin-name">+</span></span> x y) <span class="number">2</span>)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">abs</span></span> x)</span><br><span class="line">	(<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&lt;</span></span> x <span class="number">0</span>)</span><br><span class="line">		(<span class="name"><span class="builtin-name">-</span></span> x)</span><br><span class="line">		x</span><br><span class="line">	)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">square</span> x)</span><br><span class="line">	(<span class="name"><span class="builtin-name">*</span></span> x x)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">iter-sqrt</span> guess x)</span><br><span class="line"></span><br><span class="line">	(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">good-enough?</span> guess x)</span><br><span class="line">		</span><br><span class="line">		(<span class="name"><span class="builtin-name">&lt;</span></span> (<span class="name"><span class="builtin-name">abs</span></span> (<span class="name"><span class="builtin-name">-</span></span> x (<span class="name">square</span> guess))) <span class="number">0.001</span>)</span><br><span class="line">	)</span><br><span class="line"></span><br><span class="line">	(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">improve-guess</span> guess x)</span><br><span class="line">		(<span class="name">average</span> guess (<span class="name"><span class="builtin-name">/</span></span> x guess))</span><br><span class="line">	)</span><br><span class="line">	</span><br><span class="line">	(<span class="name">new-if</span> (<span class="name">good-enough?</span> guess x) </span><br><span class="line">		guess</span><br><span class="line">		(<span class="name">iter-sqrt</span> (<span class="name">improve-guess</span> guess x) x)</span><br><span class="line">	)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">sqrt</span></span> x)</span><br><span class="line">	(<span class="name">iter-sqrt</span> <span class="number">1</span> x)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">new-if</span> predicate then-caluse else-caluse)</span><br><span class="line">	(<span class="name"><span class="builtin-name">cond</span></span> (<span class="name">predicate</span> then-caluse)</span><br><span class="line">	 (<span class="name"><span class="builtin-name">else</span></span> else-caluse)</span><br><span class="line">	)</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure>
@@ -461,10 +846,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p><strong>练习1.8</strong></p>
 <figure class="highlight scheme"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">cube-root</span> x)</span><br><span class="line">	</span><br><span class="line">	(<span class="name">cube-root-iter</span> x <span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">cube-root-iter</span> x guess)</span><br><span class="line">	</span><br><span class="line">	(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">imporve-guess</span> x guess)</span><br><span class="line">		(<span class="name"><span class="builtin-name">/</span></span> (<span class="name"><span class="builtin-name">+</span></span> (<span class="name"><span class="builtin-name">/</span></span> x (<span class="name"><span class="builtin-name">*</span></span> guess guess)) (<span class="name"><span class="builtin-name">*</span></span> <span class="number">2</span> guess)) <span class="number">3</span>)</span><br><span class="line">	)</span><br><span class="line">	</span><br><span class="line">	(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">good-enough?</span> x guess)</span><br><span class="line">		(<span class="name"><span class="builtin-name">&lt;</span></span> (<span class="name"><span class="builtin-name">abs</span></span> (<span class="name"><span class="builtin-name">-</span></span> x (<span class="name">cube</span> guess))) <span class="number">0.001</span>)</span><br><span class="line">	)</span><br><span class="line">	</span><br><span class="line">	(<span class="name"><span class="builtin-name">if</span></span> (<span class="name">good-enough?</span> x guess)</span><br><span class="line">		guess</span><br><span class="line">		(<span class="name">cube-root-iter</span> x (<span class="name">imporve-guess</span> x guess))</span><br><span class="line">	)</span><br><span class="line">		</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name">cube</span> x)</span><br><span class="line">	(<span class="name"><span class="builtin-name">*</span></span> x x x)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="builtin-name">define</span></span> (<span class="name"><span class="builtin-name">abs</span></span> x)</span><br><span class="line">	(<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&lt;</span></span> x <span class="number">0</span>)</span><br><span class="line">		(<span class="name"><span class="builtin-name">-</span></span> x)</span><br><span class="line">		x</span><br><span class="line">	)</span><br><span class="line">)</span><br></pre></td></tr></table></div></figure>
 
-        <h3 id="1-1-8-过程作为黑箱抽象"   >
+        <h3 id="1-1-8-过程作为黑箱抽象">
           <a href="#1-1-8-过程作为黑箱抽象" class="heading-link"><i class="fas fa-link"></i></a>1.1.8 过程作为黑箱抽象</h3>
       
-        <h3 id="原文摘录-7"   >
+        <h3 id="原文摘录-7">
           <a href="#原文摘录-7" class="heading-link"><i class="fas fa-link"></i></a>原文摘录</h3>
       <p>…如果只看good-enough?过程，与其说square是一个过程，不如说它是一个过程的抽象，即所谓的过程抽象。在这一抽象层次上，任何能计算出平方的过程都同样可用。</p>
 <p>由此可见，一个过程定义应该能隐藏起一些细节。这将使过程的使用者可能不必自己去写这些过程，而是从其他程序员那里作为一个黑箱接受了它。用户在使用一个过程时，应该不需要去弄清它是如何实现的。</p>
@@ -476,7 +861,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <p>…过程的形式参数时相应过程体里的局部名字</p>
 <p>…我们也希望将这种子过程局部化，将它们隐藏到sqrt里面，以使sqrt可以与其他采用逼近的过程共存，让它们中的每一个都有good-enough?过程。…我们要允许一个过程里带有一些内部定义，使他们是局部于这一过程的。</p>
 
-        <h3 id="1-1-总结"   >
+        <h3 id="1-1-总结">
           <a href="#1-1-总结" class="heading-link"><i class="fas fa-link"></i></a>1.1 总结</h3>
       <ul>
 <li>1.1.1 什么是基本表达式和组合表达式</li>
@@ -489,7 +874,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.0"><!--
 <li>1.1.8 讲述过程作为黑箱，形参作为过程体内的局部变量，以及过程的内部定义和块结构</li>
 </ul>
 <p>总体来说，这一节<strong>介绍了scheme的基本语法</strong>以及<strong>过程作为黑箱以及过程的内部定义</strong>的编程思想。</p>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/sakura.svg" alt="avatar"></div><p class="sidebar-ov-author__text">I am Samson</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/SamsonRuan" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://segmentfault.com/" target="_blank" rel="noopener" data-popover="思否" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">sf</span></a><a class="sidebar-ov-social-item" href="https://csdn.com" target="_blank" rel="noopener" data-popover="CSDN" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CSDN</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">1</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">6</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Samson Yuen</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v4.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.0.0-rc.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script type="text/x-mathjax-config">var mathjaxMhchem = '';
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/sakura.svg" alt="avatar"></div><p class="sidebar-ov-author__text">I am Samson</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/SamsonRuan" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://segmentfault.com/" target="_blank" rel="noopener" data-popover="思否" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">sf</span></a><a class="sidebar-ov-social-item" href="https://csdn.com" target="_blank" rel="noopener" data-popover="CSDN" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CSDN</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">9</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">14</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Samson Yuen</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v4.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.0.0-rc.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script type="text/x-mathjax-config">var mathjaxMhchem = '';
 var mathJaxTex = {
   equationNumbers: {
     autoNumber: 'AMS'
